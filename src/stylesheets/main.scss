@@ -130,12 +130,22 @@ body {
 
 .platform {
 	height: 550px;
+	.platform-text {
+		margin-top: 70px;
+	}
+	.platform-info {
+		width: 500px;
+		margin: 0 auto;
+		margin-top: 35px;
+	}
 }
-.platform-text {
-	margin-top: 70px;
-}
-.platform-info {
-	width: 450px;
+.food-icon {
+	text-align: center;
+	margin-top: 90px;
+	img {
+		height: 124px;
+		margin-right: 85px;
+	}
 }
 
 // mobile format
