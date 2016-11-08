@@ -160,15 +160,14 @@ body {
 	}
 }
 
-.requestdonate {
-	height: 500px;
+.request-donate {
+	height: 450px;
 	.arrow-container {
 		text-align: center;
 		img {
 			height: 56px;
 		}
 	}
-
 	.request-donate-text-container {
 		// margin-top: 70px;
 		width: 67%;
@@ -199,6 +198,30 @@ body {
 		display: inline-block;
 	}
 
+}
+.how-to {
+	height: 800px;
+	img {
+		width: 25%;
+		margin: 90px auto;
+	}
+	.how-to-text-container {
+		// margin-top: 50px;
+		width: 45%;
+		margin: 50px auto;
+		
+		h2 {
+			font-weight: bold;
+			font-size: 32px;
+			font-family: 'Roboto', sans-serif;
+		}
+		p {
+			margin-top: 25px;
+			font-size: 14px;
+			font-family: 'Roboto-Regular', sans-serif;
+		}
+	}
+	
 }
 
 // mobile format

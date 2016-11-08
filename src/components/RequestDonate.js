@@ -5,7 +5,7 @@ import arrow_down_hover from '../../public/images/arrow_down_hover@2x.png';
 export default class RequestDonate extends Component {
   render() { 
     return (
-	    <div className='requestdonate'>
+	    <div className='request-donate'>
 	      <div className='request'> 
 	      	<div className='request-donate-text-container'>
 		      	<h2 className='text-center text-uppercase'>Be a requester</h2>
