@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Platform from './Platform';
 import share2x from '../../public/images/share@2x.png';
 import facebook2x from '../../public/images/icon_facebook@2x.png';
 import twitter2x from '../../public/images/icon_twitter@2x.png';
 import iphone_big from '../../public/images/iphone_big.png'
 
 
-export default class Main extends Component {
+export default class Home extends Component {
   render() {
     return (
       <div className="container-fluid">
@@ -46,6 +47,7 @@ export default class Main extends Component {
 						<img src={iphone_big} className='iphone img-responsive'/>
 					</div>
 				</div>
+				<Platform />
 			</div>
     )
   }
