@@ -15,17 +15,17 @@ export default class Platform extends Component {
         <div className='food-icon-container'>
         	<div className='food-descrip-container'>
 	      		<img src={icon1} className='food-icon'/><br/>
-	      		<b>Who uses the app?</b><br/>
+	      		<b><p>Who uses the app?</p></b>
 	      		<p>I'm a really good feature. That's why we want to talk about it</p>
       		</div>
       		<div className='food-descrip-container'>
 	      		<img src={icon2} className='food-icon'/><br/>
-	      		<b>Who uses the app?</b><br/>
+	      		<b><p>Who uses the app?</p></b>
 	      		<p>I'm a really good feature. That's why we want to talk about it</p>
       		</div>
       		<div className='food-descrip-container'>
-	      		<img src={icon3} className='last-food-icon'/><br/>
-	      		<b>Who uses the app?</b><br/>
+	      		<img src={icon3} className='food-icon'/><br/>
+	      		<b><p>Who uses the app?</p></b>
 	      		<p>I'm a really good feature. That's why we want to talk about it</p>
       		</div>
       	</div>

@@ -142,15 +142,21 @@ body {
 .food-icon-container {
 	text-align: center;
 	margin-top: 90px;
+
 	.food-descrip-container {
 		display: inline-block;
-		margin-right: 85px;
-		.food-icon {
-			height: 124px;
+		margin-right: 40px;
+		margin-left: 40px;
+		width: 250px;
+		b p{
+			margin-top: 45px;
 		}
-		.last-food-icon {
+		p {
+			margin-top: 15px;
+			margin-bottom: 0px;
+		}
+		img {
 			height: 124px;
-			margin: none;
 		}
 	}
 }
