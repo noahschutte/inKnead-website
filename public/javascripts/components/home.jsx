@@ -7,12 +7,12 @@ var Home = React.createClass({
 				<div className="home">
 
 					<div className='logo-container'>
-						<img src='%PUBLIC_URL%/images/logo@2x.png' className='logo'/>
+						<img src='assets/logo@2x.png' className='logo'/>
 					</div>
 					<div className='social-container'>
-						<img src='%PUBLIC_URL%/images/icon_facebook@2x.png' className='social-icons'/>
-						<img src='%PUBLIC_URL%/images/icon_twitter@2x.png' className='social-icons'/>
-						<img src='asdf' className='social-icons share-icon'/>
+						<img src='assets/icon_facebook@2x.png' className='social-icons'/>
+						<img src='asdf' className='social-icons'/>
+						<img src={process.env.PUBLIC_URL + "/images/share@2x.png"} className='social-icons share-icon'/>
 					</div>
 
 					<div className="main-text">

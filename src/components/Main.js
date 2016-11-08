@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+import share2x from '../../public/images/share@2x.png';
+// import '../../public/stylesheets/main.css.scss';
 
 export default class Main extends Component {
   render() {
@@ -14,7 +14,7 @@ export default class Main extends Component {
 					<div className='social-container'>
 						<img src='../assets/images/icon_facebook@2x.png' className='social-icons'/>
 						<img src='../assets/images/icon_twitter@2x.png' className='social-icons'/>
-						<img src='../assets/images/share@2x.png' className='social-icons share-icon'/>
+						<img src={share2x} className='social-icons share-icon'/>
 					</div>
 
 					<div className="main-text">
