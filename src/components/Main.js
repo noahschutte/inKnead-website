@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import share2x from '../../public/images/share@2x.png';
-// import '../../public/stylesheets/main.css.scss';
+import facebook2x from '../../public/images/icon_facebook@2x.png';
+import twitter2x from '../../public/images/icon_twitter@2x.png';
+import iphone_big from '../../public/images/iphone_big.png'
+
 
 export default class Main extends Component {
   render() {
@@ -12,8 +15,8 @@ export default class Main extends Component {
 						<img role="presentation" src='./images/logo@2x.png' className='logo'/>
 					</div>
 					<div className='social-container'>
-						<img src='../assets/images/icon_facebook@2x.png' className='social-icons'/>
-						<img src='../assets/images/icon_twitter@2x.png' className='social-icons'/>
+						<img src={facebook2x} className='social-icons'/>
+						<img src={twitter2x} className='social-icons'/>
 						<img src={share2x} className='social-icons share-icon'/>
 					</div>
 
@@ -40,7 +43,7 @@ export default class Main extends Component {
 
 
 					<div className="iphone-container">
-						<img src='../../assets/images/iphone_big.png' className='iphone img-responsive'/>
+						<img src={iphone_big} className='iphone img-responsive'/>
 					</div>
 				</div>
 			</div>
