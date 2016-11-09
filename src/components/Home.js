@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Platform from './Platform';
 import RequestDonate from './RequestDonate';
 import HowTo from './HowTo';
+import OneStep from './OneStep';
 import share2x from '../../public/images/share@2x.png';
 import facebook2x from '../../public/images/icon_facebook@2x.png';
 import twitter2x from '../../public/images/icon_twitter@2x.png';
@@ -52,6 +53,7 @@ export default class Home extends Component {
 				<Platform />
 				<RequestDonate />
 				<HowTo />
+				<OneStep />
 			</div>
     )
   }

@@ -200,7 +200,7 @@ body {
 
 }
 .how-to {
-	height: 800px;
+	height: 875px;
 	img {
 		width: 25%;
 		margin: 90px auto;
@@ -209,7 +209,6 @@ body {
 		// margin-top: 50px;
 		width: 45%;
 		margin: 50px auto;
-		
 		h2 {
 			font-weight: bold;
 			font-size: 32px;
@@ -221,8 +220,46 @@ body {
 			font-family: 'Roboto-Regular', sans-serif;
 		}
 	}
-	
 }
+.one-step {
+	height: 500px;
+	background-color: rgba(231, 76, 60, 1);
+	div {
+		display: inline-block;
+		position: relative;
+	}
+	.one-step-iphone-container {
+		width: 550px;
+		height: 425px;
+		left: 10%;
+		top: 15%;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+	.one-step-text-container {
+		// margin-top: 45px;
+		// display: inline-block;
+		left: 4%;
+		top: -22%;
+		h2 {
+			width: 220px;
+			color: white;
+			font-weight: bold;
+			font-size: 32px;
+			font-family: 'Roboto', sans-serif;
+		}
+		p {
+			margin-top: 25px;
+			color: white;
+			font-size: 14px;
+			font-family: 'Roboto-Regular', sans-serif;
+			width: 390px;
+		}
+	}
+}
+
 
 // mobile format
 @media (max-device-width: 780px) {

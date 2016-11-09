@@ -6,7 +6,6 @@ export default class RequestDonate extends Component {
   render() { 
     return (
       <div className='how-to'>
-
 	      <div className='how-to-text-container'>
 	        <h2 className='text-center text-uppercase'>How to donate</h2>
 	        <p className='text-center'> Fusce in purus euismod velit ullamcorper accumsan. 
@@ -14,7 +13,6 @@ export default class RequestDonate extends Component {
 	        Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
 	        per inceptos himenaeos. </p>
 	      </div>
-	      
 	      <img src={iphone_big} className='img-responsive'/>
       </div>
     )
