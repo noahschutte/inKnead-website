@@ -1,129 +1,142 @@
+@font-face {
+  font-family: test;
+  src: url('../../public/fonts/UltraBeams.ttf');
+}
+
 body {
 	margin: 0;
 }
-.home {
-	background-color: rgba(231, 76, 60, 1);
+.home-container {
+	background-color: #D0021B;
 	height: 550px;
-}
+	.home {
+		max-width: 1024px;
+		height: 550px;
+		margin: 0 auto;
+		.main-text{
+			display: inline-block;
+			position: relative;
+			float: left;
+			clear: left;
+			left: 42px;
+			top: 27%;
+			.headline {
+				width: 550px;
+				p {
+					color: white;
+					// font-weight: bold;
+					font-size: 56px;
+					font-family: test;
+					margin: 0px 0px 35px 0px;
+				}
+			}
+			.headline-info-temp {
+				width: 300px;
+				p {
+				color: white;
+				// font-weight: regular;
+				font-size: 12px;
+				font-family: 'Roboto-regular', sans-serif;
+				// font-weight: 400;
+				}
+			}
+		}
+		.header-container {
+			position: relative;
+			top: 7%;
+			.logo-container {
+				display: inline-block;
+				position: relative;
+				float: left;
+				left: 48px;
+				// margin: 0 0 0 4%;
+				.logo {
+					height: 65px;
+				}
+			}
+			.social-container {
+				display: inline-block;
+				position: relative;
+				height: 65px;
+				float: right;
+				right: 48px;
+				.social-icons {
+					margin: 0 0 0 28px;
+					height: 100%;
+				}
+			}
+		}
 
-.main-text{
-	position: relative;
-	float: left;
-	top: 27%;
-	.headline {
-		width: 400px;
-		p {
+
+
+		.iphone-container {
+			// height: 83%;
+			position: relative;
+			float: right;
+			margin: 0 20% 0 0;
+			top: 12%;
+			width: 275px;
+			height: 78.9%;
+			overflow: hidden;
+			.iphone {
+				// overflow: hidden;
+				// height: 500px;
+			}
+		}
+
+		.email-input::-webkit-input-placeholder {
+		  color: white;
+			font-size: 16px;
+			font-family: 'Roboto-Regular', sans-serif;
+		}
+
+		.email-input {
+			background-color: rgba(210, 114, 101, 1);
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			padding: 10px 30px;
+			border: none;
+			font-size: 16px;
 			color: white;
-			font-weight: bold;
-			font-size: 44px;
-			font-family: 'Roboto', sans-serif;
-			margin: 0px 0px 35px 0px;
 		}
-	}
-	.headline-info-temp {
-		width: 300px;
-		p {
-		color: white;
-		// font-weight: regular;
-		font-size: 12px;
-		font-family: 'Roboto-regular', sans-serif;
-		// font-weight: 400;
+
+		.white-button {
+			background-color: white;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			border: none;
+			display: inline-block;
+			cursor: pointer;
+			color: rgba(210, 114, 101, 1);
+			font-family: 'Roboto-Medium', sans-serif;
+			font-size: 16px;
+			padding: 10px 50px;
+			text-decoration: none;
 		}
-	}
-}
-.logo-container {
-	position: relative;
-	top: 7%;
-	float: left;
-	left: 3%;
-	// margin: 0 0 0 4%;
-	.logo {
-		height: 60px;
-	}
-}
-.social-container {
-	position: relative;
-	top: 7%;
-	float: right;
-	// margin: 0 8% 0 0;
-	height: 50px;
-	right: 3%;
-	.social-icons {
-		margin: 0 0 0 30px;
-		height: 50%;
-	}
-	.share-icon {
-		height: 100%;
-	}
-}
 
-
-.iphone-container {
-	// height: 83%;
-	position: relative;
-	float: right;
-	margin: 0 20% 0 0;
-	top: 12%;
-	width: 275px;
-	height: 78.9%;
-	overflow: hidden;
-	.iphone {
-		// overflow: hidden;
-		// height: 500px;
-	}
-}
-
-.email-input::-webkit-input-placeholder {
-  color: white;
-	font-size: 16px;
-	font-family: 'Roboto-Regular', sans-serif;
-}
-
-.email-input {
-	background-color: rgba(210, 114, 101, 1);
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-	padding: 10px 30px;
-	border: none;
-	font-size: 16px;
-	color: white;
-}
-
-.white-button {
-	background-color: white;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	border: none;
-	display: inline-block;
-	cursor: pointer;
-	color: rgba(210, 114, 101, 1);
-	font-family: 'Roboto-Medium', sans-serif;
-	font-size: 16px;
-	padding: 10px 50px;
-	text-decoration: none;
-}
-
-.learn-demo-container {
-	margin-top: 60px;
-	.learn-button {
-		padding: 10px 40px;
-	}
-	.demo-button {
-		background-color: rgba(231, 76, 60, 1);
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px;
-		border: 3px solid white;
-		display: inline-block;
-		cursor: pointer;
-		color: white;
-		font-family: 'Roboto-Medium', sans-serif;
-		font-size: 16px;
-		padding: 7px 56px;
-		text-decoration: none;
-		margin-left: 35px;
+		.learn-demo-container {
+			margin-top: 60px;
+			.learn-button {
+				padding: 10px 40px;
+			}
+			.demo-button {
+				background-color: rgba(231, 76, 60, 1);
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				border: 3px solid white;
+				display: inline-block;
+				cursor: pointer;
+				color: white;
+				font-family: 'Roboto-Medium', sans-serif;
+				font-size: 16px;
+				padding: 7px 56px;
+				text-decoration: none;
+				margin-left: 35px;
+			}
+		}
 	}
 }
 
