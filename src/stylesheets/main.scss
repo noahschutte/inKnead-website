@@ -35,8 +35,8 @@ body {
 				p {
 				color: white;
 				// font-weight: regular;
-				font-size: 14px;
-				font-family: 'Avenir Next-Regular';
+				font-size: 16px;
+				font-family: 'AvenirNext-Regular';
 				// font-weight: 400;
 				}
 			}
@@ -86,7 +86,7 @@ body {
 			.email-input::-webkit-input-placeholder {
 			  color: white;
 				font-size: 16px;
-				font-family: 'Avenir Next-Regular';
+				font-family: 'AvenirNext-Regular';
 			}
 			.email-input {
 				background-color: #E67265;
@@ -107,7 +107,7 @@ body {
 				display: inline-block;
 				cursor: pointer;
 				color: #D0021B;
-				font-family: 'AvenirNext-Medium';
+				font-family: 'AvenirNext-Regular';
 				font-size: 16px;
 				padding: 10px 50px;
 				text-decoration: none;
@@ -125,7 +125,7 @@ body {
 				display: inline-block;
 				cursor: pointer;
 				color: #D0021B;
-				font-family: 'AvenirNext-Medium';
+				font-family: 'AvenirNext-Regular';
 				font-size: 16px;
 				text-decoration: none;
 				padding: 13px 65px;
@@ -140,7 +140,7 @@ body {
 				display: inline-block;
 				cursor: pointer;
 				color: white;
-				font-family: 'AvenirNext-Medium';
+				font-family: 'AvenirNext-Regular';
 				font-size: 16px;
 				padding: 7px 56px;
 				text-decoration: none;
@@ -229,25 +229,56 @@ body {
 	}
 
 }
-.how-to {
-	height: 875px;
-	img {
-		width: 25%;
-		margin: 90px auto;
-	}
-	.how-to-text-container {
-		// margin-top: 50px;
-		width: 45%;
-		margin: 50px auto;
-		h2 {
-			font-weight: bold;
-			font-size: 32px;
-			font-family: 'Roboto', sans-serif;
+.how-to-container{
+		height: 975px;
+		background-color: #D0021B;
+	.how-to {
+		height: 975px;
+		margin: 0 auto;
+		max-width: 1024px;
+		overflow: hidden;
+		img {
+			width: 27%;
+			// margin: auto;
+			display: inline-block;
+			float: right;
+			// clear: right;
+			margin-top: 80px;
+			position: relative;
+			right: 68px;
 		}
-		p {
-			margin-top: 25px;
-			font-size: 14px;
-			font-family: 'Roboto-Regular', sans-serif;
+		.how-to-text-container {
+			// margin-top: 100px;
+			width: 65%;
+			margin: auto;
+			margin-top: 100px;
+			color: white;
+			h2 {
+				font-family: UltraBeams;
+				font-size: 44px;
+			}
+			p {
+				margin-top: 28px;
+				font-size: 16px;
+				font-family: 'AvenirNext-Regular';
+			}
+		}
+		.steps-container {
+			display: inline-block;
+			color: white;
+			margin-top: 80px;
+			position: relative;
+			left: 68px;
+			h2 {
+				font-family: UltraBeams;
+				font-size: 44px;
+			}
+			p {
+				margin-top: 5px;
+				font-size: 16px;
+				font-family: 'AvenirNext-Regular';
+				width: 400px;
+			}
 		}
 	}
 }
@@ -387,7 +418,7 @@ body {
 		display: inline-block;
 		cursor: pointer;
 		color: rgba(210, 114, 101, 1);
-		font-family: 'Roboto-Medium', sans-serif;
+		font-family: 'Roboto-Regular', sans-serif;
 		font-size: 35px;
 		padding: 10px 50px;
 		text-decoration: none;
