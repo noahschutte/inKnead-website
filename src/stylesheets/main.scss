@@ -1,5 +1,5 @@
 @font-face {
-  font-family: test;
+  font-family: UltraBeams;
   src: url('../../public/fonts/UltraBeams.ttf');
 }
 
@@ -8,10 +8,10 @@ body {
 }
 .home-container {
 	background-color: #D0021B;
-	height: 550px;
+	height: 600px;
 	.home {
 		max-width: 1024px;
-		height: 550px;
+		height: 600px;
 		margin: 0 auto;
 		.main-text{
 			display: inline-block;
@@ -19,24 +19,24 @@ body {
 			float: left;
 			clear: left;
 			left: 42px;
-			top: 27%;
+			top: 20%;
 			.headline {
 				width: 550px;
 				p {
 					color: white;
 					// font-weight: bold;
 					font-size: 56px;
-					font-family: test;
-					margin: 0px 0px 35px 0px;
+					font-family: UltraBeams;
+					margin: 0px 0px 28px 0px;
 				}
 			}
 			.headline-info-temp {
-				width: 300px;
+				width: 425px;
 				p {
 				color: white;
 				// font-weight: regular;
-				font-size: 12px;
-				font-family: 'Roboto-regular', sans-serif;
+				font-size: 14px;
+				font-family: 'Avenir Next-Regular', sans-serif;
 				// font-weight: 400;
 				}
 			}
@@ -66,63 +66,73 @@ body {
 				}
 			}
 		}
-
-
-
 		.iphone-container {
 			// height: 83%;
 			position: relative;
 			float: right;
-			margin: 0 20% 0 0;
-			top: 12%;
+			clear: right;
+			margin: 0 10% 0 0;
+			top: 16%;
 			width: 275px;
-			height: 78.9%;
+			height: 73.1%;
 			overflow: hidden;
 			.iphone {
 				// overflow: hidden;
 				// height: 500px;
 			}
 		}
-
-		.email-input::-webkit-input-placeholder {
-		  color: white;
-			font-size: 16px;
-			font-family: 'Roboto-Regular', sans-serif;
+		.email-form-container {
+			margin-top: 60px;
+			.email-input::-webkit-input-placeholder {
+			  color: white;
+				font-size: 16px;
+				font-family: 'Avenir Next-Regular', sans-serif;
+			}
+			.email-input {
+				background-color: #E67265;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				padding: 10px 30px;
+				border: none;
+				font-size: 16px;
+				color: white;
+			}
+			.white-button {
+				background-color: white;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				border: none;
+				display: inline-block;
+				cursor: pointer;
+				color: #D0021B;
+				font-family: 'Avenir Next-Medium', sans-serif;
+				font-size: 16px;
+				padding: 10px 50px;
+				text-decoration: none;
+			}
 		}
-
-		.email-input {
-			background-color: rgba(210, 114, 101, 1);
-			-moz-border-radius: 4px;
-			-webkit-border-radius: 4px;
-			border-radius: 4px;
-			padding: 10px 30px;
-			border: none;
-			font-size: 16px;
-			color: white;
-		}
-
-		.white-button {
-			background-color: white;
-			-moz-border-radius: 3px;
-			-webkit-border-radius: 3px;
-			border-radius: 3px;
-			border: none;
-			display: inline-block;
-			cursor: pointer;
-			color: rgba(210, 114, 101, 1);
-			font-family: 'Roboto-Medium', sans-serif;
-			font-size: 16px;
-			padding: 10px 50px;
-			text-decoration: none;
-		}
-
+		
 		.learn-demo-container {
 			margin-top: 60px;
-			.learn-button {
-				padding: 10px 40px;
-			}
 			.demo-button {
-				background-color: rgba(231, 76, 60, 1);
+				background-color: white;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				border: none;
+				display: inline-block;
+				cursor: pointer;
+				color: #D0021B;
+				font-family: 'Avenir Next-Medium', sans-serif;
+				font-size: 16px;
+				text-decoration: none;
+				padding: 13px 65px;
+				margin-left: 35px;
+			}
+			.learn-button {
+				background-color: #D0021B;
 				-moz-border-radius: 3px;
 				-webkit-border-radius: 3px;
 				border-radius: 3px;
@@ -130,11 +140,11 @@ body {
 				display: inline-block;
 				cursor: pointer;
 				color: white;
-				font-family: 'Roboto-Medium', sans-serif;
+				font-family: 'Avenir Next-Medium', sans-serif;
 				font-size: 16px;
 				padding: 7px 56px;
 				text-decoration: none;
-				margin-left: 35px;
+				padding: 10px 40px;
 			}
 		}
 	}
