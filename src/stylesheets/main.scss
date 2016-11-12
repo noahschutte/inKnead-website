@@ -243,7 +243,7 @@ body {
 	}
 }
 .one-step {
-	height: 800px;
+	height: 620px;
 	div {
 		display: inline-block;
 		position: relative;
@@ -274,9 +274,51 @@ body {
 	}
 }
 .creators-container{
+		height: 600px;
+		background-color: grey;
+		overflow: hidden;
 	.creators {
-		
+		margin: 0 auto;
+		height: 600px;
+		max-width: 1024px;
+		h2 {
+			font-size: 44px;
+			font-family: UltraBeams;
+			margin-top: 100px;
+		}
+		.staff-container {
+			text-align: center;
+			margin-top: 100px;
+			.individual {
+					display: inline-block;
+					margin: auto 50px;
+				#circle {
+					width: 120px;
+					height: 120px;
+					background-color: blue;
+					-moz-border-radius: 50%;
+					-webkit-border-radius: 50%;
+					border-radius: 50%;
+				}
+				img {
+					margin: 0 10px;
+					margin-top: 16px;
+					height: 35px;
+					width: 35px;
+				}
+				b p {
+					margin-top: 20px;
+					font-size: 20px;
+					font-family: 'AvenirNext-Regular';
+				}
+				p {
+					font-size: 16px;
+					font-family: 'AvenirNext-Regular';
+				}
+			}
+		}
 	}
+
 }
 
 
