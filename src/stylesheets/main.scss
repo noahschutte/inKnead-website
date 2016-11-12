@@ -189,46 +189,6 @@ body {
 		}
 	}
 }
-
-.request-donate {
-	height: 450px;
-	.arrow-container {
-		text-align: center;
-		img {
-			height: 56px;
-		}
-	}
-	.request-donate-text-container {
-		// margin-top: 70px;
-		width: 67%;
-		margin: 70px auto;
-		h2 {
-			color: white;
-			font-weight: bold;
-			font-size: 32px;
-			font-family: UltraBeams;
-		}
-		p {
-			margin-top: 80px;
-			color: white;
-			font-size: 14px;
-			font-family: 'Roboto-Regular', sans-serif;
-		}
-	}
-	.request {
-		background-color: rgba(231, 76, 60, 1);
-		height: 100%;
-		width: 50%;
-		display: inline-block;
-	}
-	.donate {
-		background-color: rgba(210, 114, 101, 1);
-		height: 100%;
-		width: 50%;
-		display: inline-block;
-	}
-
-}
 .how-to-container{
 		height: 975px;
 		background-color: #D0021B;
@@ -283,8 +243,7 @@ body {
 	}
 }
 .one-step {
-	height: 500px;
-	background-color: rgba(231, 76, 60, 1);
+	height: 800px;
 	div {
 		display: inline-block;
 		position: relative;
@@ -292,9 +251,7 @@ body {
 	.one-step-iphone-container {
 		width: 550px;
 		height: 425px;
-		left: 10%;
-		top: 15%;
-		overflow: hidden;
+		top: 1%;
 		img {
 			width: 100%;
 		}
@@ -303,21 +260,22 @@ body {
 		// margin-top: 45px;
 		// display: inline-block;
 		left: 4%;
-		top: -22%;
+		top: -12%;
 		h2 {
-			width: 220px;
-			color: white;
-			font-weight: bold;
-			font-size: 32px;
-			font-family: 'Roboto', sans-serif;
+			font-size: 44px;
+			font-family: UltraBeams;
 		}
 		p {
 			margin-top: 25px;
-			color: white;
-			font-size: 14px;
-			font-family: 'Roboto-Regular', sans-serif;
-			width: 390px;
+			font-size: 16px;
+			font-family: 'AvenirNext-Regular';
+			width: 550px;
 		}
+	}
+}
+.creators-container{
+	.creators {
+		
 	}
 }
 
@@ -451,3 +409,46 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 }
+
+
+
+// recycle
+// .request-donate {
+// 	height: 450px;
+// 	.arrow-container {
+// 		text-align: center;
+// 		img {
+// 			height: 56px;
+// 		}
+// 	}
+// 	.request-donate-text-container {
+// 		// margin-top: 70px;
+// 		width: 67%;
+// 		margin: 70px auto;
+// 		h2 {
+// 			color: white;
+// 			font-weight: bold;
+// 			font-size: 32px;
+// 			font-family: UltraBeams;
+// 		}
+// 		p {
+// 			margin-top: 80px;
+// 			color: white;
+// 			font-size: 14px;
+// 			font-family: 'Roboto-Regular', sans-serif;
+// 		}
+// 	}
+// 	.request {
+// 		background-color: rgba(231, 76, 60, 1);
+// 		height: 100%;
+// 		width: 50%;
+// 		display: inline-block;
+// 	}
+// 	.donate {
+// 		background-color: rgba(210, 114, 101, 1);
+// 		height: 100%;
+// 		width: 50%;
+// 		display: inline-block;
+// 	}
+
+// }

@@ -3,6 +3,7 @@ import Platform from './Platform';
 import RequestDonate from './RequestDonate';
 import HowTo from './HowTo';
 import OneStep from './OneStep';
+import Creators from './Creators';
 import facebook2x from '../../public/images/icon_facebook@2x.png';
 import twitter2x from '../../public/images/icon_twitter@2x.png';
 import iphone_big from '../../public/images/iphone_big.png'
@@ -53,6 +54,7 @@ export default class Home extends Component {
 					{/*<RequestDonate />*/}
 					<HowTo />
 					<OneStep />
+					<Creators />
 				</div>
 			</div>
     )
