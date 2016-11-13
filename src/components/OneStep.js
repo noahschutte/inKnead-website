@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import iphone from '../../public/images/iphone_6_request@2x.png'
 
-export default class RequestDonate extends Component {
+export default class OneStep extends Component {
   render() { 
     return (
       <div className='one-step'>

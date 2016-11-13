@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import iphone_big from '../../public/images/iphone_big.png'
 
 
-export default class RequestDonate extends Component {
+export default class HowTo extends Component {
   render() { 
     return (
     	<div className='how-to-container'>

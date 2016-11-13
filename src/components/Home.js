@@ -4,6 +4,8 @@ import RequestDonate from './RequestDonate';
 import HowTo from './HowTo';
 import OneStep from './OneStep';
 import Creators from './Creators';
+import Subscribe from './Subscribe';
+import Footer from './Footer';
 import facebook2x from '../../public/images/icon_facebook@2x.png';
 import twitter2x from '../../public/images/icon_twitter@2x.png';
 import iphone_big from '../../public/images/iphone_big.png'
@@ -50,12 +52,14 @@ export default class Home extends Component {
 							<img src={iphone_big} className='iphone img-responsive'/>
 						</div>
 					</div>
-					<Platform />
-					{/*<RequestDonate />*/}
-					<HowTo />
-					<OneStep />
-					<Creators />
 				</div>
+				<Platform />
+				{/*<RequestDonate />*/}
+				<HowTo />
+				<OneStep />
+				<Creators />
+				<Subscribe />
+				<Footer />
 			</div>
     )
   }

@@ -318,7 +318,86 @@ body {
 			}
 		}
 	}
+}
+.subscribe {
+	background-color: black;
+	height: 475px;
+	border-bottom: 2px grey solid;
+	overflow: hidden;
+	div {
+		margin-top: 35px;
+		text-align: center;
+		img {
+			width: 45px;
+		}
+		p {
+			color: white;
+			font-family: AvenirNext-Regular;
+			font-size: 16px;
+			margin-top: 40px;
+		}
+		.email-form-container {
+			margin-top: 20px;
+			.email-input::-webkit-input-placeholder {
+				color: #4A4A4A;
+				font-size: 16px;
+				font-family: 'AvenirNext-Regular';
+			}
+			.email-input {
+				background-color: white;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				padding: 10px 60px;
+				border: none;
+				font-size: 16px;
+				color: #4A4A4A;
+			}
+			.white-button {
+				background-color: #D0021B;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				border: none;
+				display: inline-block;
+				cursor: pointer;
+				color: white;
+				font-family: 'AvenirNext-Regular';
+				font-size: 16px;
+				padding: 10px 55px;
+				text-decoration: none;
+			}
+		}
+	}
+	h2 {
+		color: white;
+		font-family: UltraBeams;
+		font-size: 44px;
+		margin-top: 100px;
+	}
 
+}
+footer {
+	background-color: black;
+	height: 460px;
+	overflow: hidden;
+	img {
+		display: inline-block;
+		margin: auto;
+		margin-top: 35px;
+		width: 40px;
+	}
+	h2 {
+		color: white;
+		font-family: UltraBeams;
+		font-size: 44px;
+		margin-top: 100px;
+	}
+	p {
+		color: #4A4A4A;
+		font: AvenirNext-Regular;
+		font-size: 16px;
+	}
 }
 
 
