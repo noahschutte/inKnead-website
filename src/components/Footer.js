@@ -5,8 +5,12 @@ export default class Footer extends Component {
   render() {
     return (
     	<footer>
-
-    		<p>herro</p>
+    		<div>
+	    		<p className='text-uppercase'>privacy policy</p>
+	    		<p className='text-uppercase'>faq</p>
+	    		<p className='text-uppercase'>contact us</p>
+    		</div>
+    		<p>Designed in New York. Built in React. &copy;2016 in knead.</p>
   		</footer>
     )
   }
