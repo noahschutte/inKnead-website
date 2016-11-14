@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Main from './components/Main';
+import Home from './components/Home';
 import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
-      <Main />
+      <Home />
     );
   }
 }
