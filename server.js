@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 
-app.set('port', (process.env.PORT || 3001));
+app.set('port', (process.env.PORT || 3100));
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === 'production') {
@@ -19,6 +19,12 @@ app.get('/api/food', (req, res) => {
     });
     return;
   }
+})
+
+app.post('/landing_page', (req, res) => {
+  console.log('test');
+  res.json("herro")
+  return;
 })
 
 app.listen(app.get('port'), () => {
