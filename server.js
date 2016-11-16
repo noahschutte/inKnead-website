@@ -6,12 +6,12 @@ var MailChimpAPI = require('mailchimp').MailChimpAPI;
  
 var apiKey = process.env.MAIL_CHIMP_API_KEY;
 
-https://us14.api.mailchimp.com/3.0
 
 try {
-    var api = new MailChimpAPI(apiKey, { version : '1.3', secure : false });
+  var api = new MailChimpAPI(apiKey, { version : '1.3', secure : false });
 } catch (error) {
-    console.log(error.message);
+  console.log('there is an error')
+  console.log(error.message);
 }
 
 // middleware
