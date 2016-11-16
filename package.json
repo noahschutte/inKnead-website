@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nf start -p 3000",
+    "start": "nf start -p $port",
+    "dev": "nf start -p 3000 --procfile Procfile.dev",
     "server": "babel-node server.js"
   },
   "repository": {
