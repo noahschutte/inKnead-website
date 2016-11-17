@@ -10,14 +10,16 @@ export default class Platform extends Component {
     return (
       <div className='platform'>
         <h2 className='text-uppercase text-center platform-text'>why use our platform</h2>
-        <p className='platform-info text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+        <p className='platform-info text-center'>Inspired by the Random Acts of Pizza community on Reddit, 
+        In Knead connects those struggling to make ends meet with those who can lend a hand.</p>
         <div className='food-icon-container'>
         	<div className='food-descrip-container'>
 	      		<img src={icon1} className='food-icon'/><br/>
-	      		<b><p>Who uses the app?</p></b>
-	      		<p>I'm a really good feature. That's why we want to talk about it</p>
+	      		<b><p>Who uses it?</p></b>
+	      		<p>Starving student? Aspiring philanthropist? 
+            Or maybe you’re just looking to restore a little faith in humanity, 
+            our community brings together the best people in the world. Cheesy? 
+            Maybe, but that’s how we like it. </p>
       		</div>
       		<div className='food-descrip-container'>
 	      		<img src={icon2} className='food-icon'/><br/>
