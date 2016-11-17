@@ -1,0 +1,58 @@
+$desktop-med-width: 768px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
+.platform {
+	height: 545px;
+	@include desktop-med {
+		height: 500px;
+	}
+	h2 {
+		font-family: UltraBeams;
+		font-size: 44px;
+	}
+	.platform-text {
+		margin-top: 100px;
+		@include desktop-med {
+			margin-top: 75px;
+		}
+	}
+	.platform-info {
+		font-family: 'AvenirNext-Regular';
+		color: #4A4A4A;
+		width: 619px;
+		margin: 0 auto;
+		margin-top: 35px;
+	}
+}
+.food-icon-container {
+	text-align: center;
+	margin-top: 80px;
+	.food-descrip-container {
+		display: inline-block;
+		margin-right: 40px;
+		margin-left: 40px;
+		width: 250px;
+		font-family: 'AvenirNext-Regular';
+		@include desktop-med {
+			width: 150px;
+		}
+		b p{
+			margin-top: 35px;
+		}
+		p {
+			margin-top: 5px;
+			margin-bottom: 0px;
+			color: #4A4A4A;
+		}
+		img {
+			height: 124px;
+			@include desktop-med {
+				height: 75px;
+			}
+		}
+	}
+}
