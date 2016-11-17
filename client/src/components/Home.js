@@ -9,6 +9,7 @@ import Footer from './Footer';
 import facebook2x from '../../public/images/icon_facebook@2x.png';
 import twitter2x from '../../public/images/icon_twitter@2x.png';
 import iphone_big from '../../public/images/iphone_big.png';
+import download from '../../public/images/download@2x.png';
 
 
 export default class Home extends Component {
@@ -31,14 +32,15 @@ export default class Home extends Component {
 								<h1>Pizza on Earth!</h1>
 							</div>
 							<div className="headline-info-temp">
-								<p>And goodwill to all men. 
-								In Knead helps you put food on a person’s plate.</p>
+								<h4>And goodwill to all men. 
+								In Knead helps you put food on a person’s plate.</h4>
+								<p>Download the Inknead app now!</p>
 							</div>
 							<div className='email-form-container'>
 
 							</div>
 							<div className='learn-demo-container'>
-								<button className='white-button learn-button'>Learn More</button>
+								<img src={download}/>
 								<button className='demo-button'>Demo</button>
 
 							</div>
