@@ -3,30 +3,8 @@
   src: url('../../public/fonts/UltraBeams.ttf');
 }
 
-@media only screen and (max-width: 768px) {
-	.home-container{
-		.home{
-
-			.main-text{
-				position: relative;
-				left: -10%;
-				top: 10%;
-				.headline {
-					width: 580px;
-					h2 {
-						color: white;
-						font-size: 30px;
-						margin: 0px 0px 20px 0px;
-					}
-				}
-			}
-		}
-	}
-}
-
-
-
-@media (max-width: 480px) {
+// mobile format
+@media (max-device-width: 780px) {
 	body {
 		background-color: blue;
 	}
@@ -36,7 +14,7 @@
 		float: left;
 		margin: 0 0 0 2%;
 		.logo {
-			height: 40px;
+			height: 70px;
 		}
 	}
 	.social-container {
@@ -44,7 +22,7 @@
 		top: 3%;
 		float: right;
 		margin: -1% 3% 0 0;
-		height: 52px;
+		height: 70px;
 		.social-icons {
 			margin: 0 0 0 30px;
 			height: 50%;
@@ -56,28 +34,28 @@
 		}
 	}
 	.home {
-		height: 600px;
+		height: 1100px;
 	}	
 	.main-text{
 		position: relative;
-		left: 15%;
-		top: 6%;
+		left: -10%;
+		top: 10%;
 		.headline {
-			width: 275px;
+			width: 580px;
 			p {
 				color: white;
 				font-weight: bold;
-				font-size: 34px;
+				font-size: 70px;
 				font-family: 'Roboto', sans-serif;
 				margin: 0px 0px 20px 0px;
 			}
 		}
 		.headline-info-temp {
-			width: 330px;
+			width: 575px;
 			p {
 			color: white;
 			// font-weight: regular;
-			font-size: 14px;
+			font-size: 25px;
 			font-family: 'Roboto-regular', sans-serif;
 			// font-weight: 400;
 			}
@@ -87,16 +65,17 @@
 		// height: 83%;
 		position: relative;
 		float: right;
-		margin: 0 19% 0 0;
-		top: 9%;
+		margin: 0 18% 0 0;
+		top: 15%;
 		width: 62%;
+		overflow: hidden;
 		.iphone {
 			// height: 500px;
 		}
 	}
 	.email-input::-webkit-input-placeholder {
 	  color: white;
-		font-size: 12px;
+		font-size: 35px;
 		font-family: 'Roboto-Regular', sans-serif;
 	}
 
@@ -107,7 +86,7 @@
 		border-radius: 4px;
 		padding: 10px 30px;
 		border: none;
-		font-size: 12px;
+		font-size: 35px;
 		color: white;
 	}
 
@@ -120,14 +99,14 @@
 		display: inline-block;
 		cursor: pointer;
 		color: rgba(210, 114, 101, 1);
-		font-family: 'Roboto-Medium', sans-serif;
-		font-size: 12px;
+		font-family: 'Roboto-Regular', sans-serif;
+		font-size: 35px;
 		padding: 10px 50px;
 		text-decoration: none;
 	}
 
 	.learn-demo-container {
-		margin-top: 30px;
+		margin-top: 60px;
 		.learn-button {
 			padding: 10px 40px;
 		}
@@ -141,11 +120,10 @@
 			cursor: pointer;
 			color: white;
 			font-family: 'Roboto-Medium', sans-serif;
-			font-size: 12px;
+			font-size: 35px;
 			padding: 7px 56px;
 			text-decoration: none;
 			margin-left: 35px;
 		}
 	}
 }
-

@@ -3,16 +3,30 @@
   src: url('../../public/fonts/UltraBeams.ttf');
 }
 
+$desktop-med-width: 768px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
 body {
 	margin: 0;
 }
 .home-container {
 	background-color: #D0021B;
 	height: 600px;
+	@include desktop-med {
+		height: 475px;
+	}
 	.home {
 		max-width: 1024px;
 		height: 600px;
 		margin: 0 auto;
+		@include desktop-med {
+			height: 475px;
+			max-width: 768px;
+		}
 		.main-text{
 			display: inline-block;
 			position: relative;
@@ -20,24 +34,38 @@ body {
 			clear: left;
 			left: 42px;
 			top: 20%;
+			@include desktop-med {
+				top: 18%;
+			}
 			.headline {
 				width: 550px;
-				p {
+				@include desktop-med {
+					width: 400px;
+				}
+				h2 {
 					color: white;
 					// font-weight: bold;
 					font-size: 56px;
 					font-family: UltraBeams;
 					margin: 0px 0px 28px 0px;
+					@include desktop-med {
+						font-size: 44px;
+					}
 				}
 			}
 			.headline-info-temp {
 				width: 425px;
+				@include desktop-med {
+					width: 375px;
+				}
 				p {
 				color: white;
-				// font-weight: regular;
 				font-size: 16px;
 				font-family: 'AvenirNext-Regular';
-				// font-weight: 400;
+
+				@include desktop-med {
+					font-size: 12px;
+				}
 				}
 			}
 		}
@@ -52,6 +80,9 @@ body {
 				// margin: 0 0 0 4%;
 				.logo {
 					height: 65px;
+					@include desktop-med {
+						height: 50px;
+					}
 				}
 			}
 			.social-container {
@@ -60,6 +91,9 @@ body {
 				height: 65px;
 				float: right;
 				right: 48px;
+				@include desktop-med {
+					height: 50px;
+				}
 				.social-icons {
 					margin: 0 0 0 28px;
 					height: 100%;
@@ -76,6 +110,12 @@ body {
 			width: 275px;
 			height: 73.1%;
 			overflow: hidden;
+			@include desktop-med {
+				width: 235px;
+				margin: 0 6% 0 0;
+				top: 14%;
+				height: 75.4%;
+			}
 			.iphone {
 				// overflow: hidden;
 				// height: 500px;
@@ -83,6 +123,9 @@ body {
 		}
 		.email-form-container {
 			margin-top: 60px;
+			@include desktop-med {
+				margin-top: 30px;
+			}
 			.email-input::-webkit-input-placeholder {
 			  color: white;
 				font-size: 16px;
@@ -116,6 +159,9 @@ body {
 		
 		.learn-demo-container {
 			margin-top: 60px;
+			@include desktop-med {
+				margin-top: 30px;
+			}
 			.demo-button {
 				background-color: white;
 				-moz-border-radius: 3px;
@@ -404,130 +450,6 @@ footer {
 }
 
 
-// mobile format
-@media (max-device-width: 780px) {
-	body {
-		background-color: blue;
-	}
-	.logo-container {
-		position: relative;
-		top: 3%;
-		float: left;
-		margin: 0 0 0 2%;
-		.logo {
-			height: 70px;
-		}
-	}
-	.social-container {
-		position: relative;
-		top: 3%;
-		float: right;
-		margin: -1% 3% 0 0;
-		height: 70px;
-		.social-icons {
-			margin: 0 0 0 30px;
-			height: 50%;
-			visibility: hidden;
-		}
-		.share-icon {
-			height: 100%;
-			visibility: visible;
-		}
-	}
-	.home {
-		height: 1100px;
-	}	
-	.main-text{
-		position: relative;
-		left: -10%;
-		top: 10%;
-		.headline {
-			width: 580px;
-			p {
-				color: white;
-				font-weight: bold;
-				font-size: 70px;
-				font-family: 'Roboto', sans-serif;
-				margin: 0px 0px 20px 0px;
-			}
-		}
-		.headline-info-temp {
-			width: 575px;
-			p {
-			color: white;
-			// font-weight: regular;
-			font-size: 25px;
-			font-family: 'Roboto-regular', sans-serif;
-			// font-weight: 400;
-			}
-		}
-	}
-	.iphone-container {
-		// height: 83%;
-		position: relative;
-		float: right;
-		margin: 0 18% 0 0;
-		top: 15%;
-		width: 62%;
-		overflow: hidden;
-		.iphone {
-			// height: 500px;
-		}
-	}
-	.email-input::-webkit-input-placeholder {
-	  color: white;
-		font-size: 35px;
-		font-family: 'Roboto-Regular', sans-serif;
-	}
-
-	.email-input {
-		background-color: rgba(210, 114, 101, 1);
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		padding: 10px 30px;
-		border: none;
-		font-size: 35px;
-		color: white;
-	}
-
-	.white-button {
-		background-color: white;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px;
-		border: none;
-		display: inline-block;
-		cursor: pointer;
-		color: rgba(210, 114, 101, 1);
-		font-family: 'Roboto-Regular', sans-serif;
-		font-size: 35px;
-		padding: 10px 50px;
-		text-decoration: none;
-	}
-
-	.learn-demo-container {
-		margin-top: 60px;
-		.learn-button {
-			padding: 10px 40px;
-		}
-		.demo-button {
-			background-color: rgba(231, 76, 60, 1);
-			-moz-border-radius: 3px;
-			-webkit-border-radius: 3px;
-			border-radius: 3px;
-			border: 3px solid white;
-			display: inline-block;
-			cursor: pointer;
-			color: white;
-			font-family: 'Roboto-Medium', sans-serif;
-			font-size: 35px;
-			padding: 7px 56px;
-			text-decoration: none;
-			margin-left: 35px;
-		}
-	}
-}
 // bootstrap mods
 .container-fluid {
 	padding-left: 0;

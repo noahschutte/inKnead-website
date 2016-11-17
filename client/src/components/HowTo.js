@@ -15,15 +15,15 @@ export default class HowTo extends Component {
 		        per inceptos himenaeos. </p>
 		      </div>
 		      <div className='steps-container'>
-			      <h2 text-uppercase>Step 1</h2>
+			      <h2 className='text-uppercase'>Step 1</h2>
 			      <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
 			      sit amet adipiscing sem neque sed ipsum. 
 			      </p><br/>
-			      <h2 text-uppercase>Step 2</h2>
+			      <h2 className='text-uppercase'>Step 2</h2>
 			      <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
 			      sit amet adipiscing sem neque sed ipsum. 
 			      </p><br/>
-			      <h2 text-uppercase>Step 3</h2>
+			      <h2 className='text-uppercase'>Step 3</h2>
 			      <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
 			      sit amet adipiscing sem neque sed ipsum. 
 			      </p><br/>

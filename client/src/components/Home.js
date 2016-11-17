@@ -28,7 +28,7 @@ export default class Home extends Component {
 							</div>
 						<div className="main-text">
 							<div className="headline">
-								<p>BEST HEADLINE IN THE WORLD</p>
+								<h2>BEST HEADLINE IN THE WORLD</h2>
 							</div>
 							<div className="headline-info-temp">
 								<p>Lorem ipsum dolor sit amet, consectetua adipiscing elit.
