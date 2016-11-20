@@ -6,7 +6,7 @@ $desktop-med-width: 768px;
 }
 
 .platform {
-	height: 545px;
+	height: 675px;
 	@include desktop-med {
 		height: 500px;
 	}
@@ -34,19 +34,21 @@ $desktop-med-width: 768px;
 	margin-top: 80px;
 	.food-descrip-container {
 		display: inline-block;
-		margin-right: 40px;
-		margin-left: 40px;
-		width: 250px;
-		font-family: 'AvenirNext-Regular';
+		margin-right: 12px;
+		margin-left: 12px;
+		width: 298px;
 		@include desktop-med {
 			width: 150px;
 		}
 		b p{
+			font-family: 'AvenirNext-Medium';
 			margin-top: 35px;
+			font-size: 22px;
 		}
 		p {
-			margin-top: 5px;
-			margin-bottom: 0px;
+			font-family: 'AvenirNext-Regular';
+			margin-top: 15px;
+			// margin-bottom: 0px;
 			color: #4A4A4A;
 		}
 		img {

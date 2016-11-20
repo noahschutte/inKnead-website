@@ -23,13 +23,19 @@ export default class Platform extends Component {
       		</div>
       		<div className='food-descrip-container'>
 	      		<img src={icon2} className='food-icon'/><br/>
-	      		<b><p>Who uses the app?</p></b>
-	      		<p>I'm a really good feature. That's why we want to talk about it</p>
+	      		<b><p>What does it do?</p></b>
+	      		<p>By putting food on a person’s plate, in knead brings comfort and warmth to people’s lives in a visible, 
+            measurable way. Humanity has a lot of generosity to offer, 
+            and in knead shows you the effects of that generosity in real time. </p>
       		</div>
       		<div className='food-descrip-container'>
 	      		<img src={icon3} className='food-icon'/><br/>
-	      		<b><p>Who uses the app?</p></b>
-	      		<p>I'm a really good feature. That's why we want to talk about it</p>
+	      		<b><p>Why donate?</p></b>
+	      		<p>New parents struggling to make time for dinner. 
+            A family whose shared vehicle needs some repairs. 
+            A superbowl party that just ran out of chips and dip. 
+            There are varying degrees of need out there, 
+            and you can fulfill the requests that resonate the most with you.</p>
       		</div>
       	</div>
       </div>
