@@ -9,24 +9,25 @@ export default class HowTo extends Component {
 	      <div className='how-to'>
 		      <div className='how-to-text-container'>
 		        <h2 className='text-center text-uppercase'>Be a donator</h2>
-		        <p className='text-center'> Fusce in purus euismod velit ullamcorper accumsan. 
-		        Nam at commodo nibh, ac ultricies ligula. 
-		        Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-		        per inceptos himenaeos. </p>
+		        <p className='text-center'> With the press of just a few buttons, 
+		        you can be certain that your pizza ends up in the right stomach. 
+		        No private messages, no exchange of personal information, no worries. 
+		        Easy, breezy, microphilanthropy.</p>
 		      </div>
 		      <div className='steps-container'>
-			      <h2 className='text-uppercase'>Step 1</h2>
-			      <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
-			      sit amet adipiscing sem neque sed ipsum. 
-			      </p><br/>
-			      <h2 className='text-uppercase'>Step 2</h2>
-			      <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
-			      sit amet adipiscing sem neque sed ipsum. 
-			      </p><br/>
-			      <h2 className='text-uppercase'>Step 3</h2>
-			      <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
-			      sit amet adipiscing sem neque sed ipsum. 
-			      </p><br/>
+		      	<div className='step-container'>
+				      <h2 className='text-uppercase'>Step 1</h2>
+				      <p>Click “Donate” next to the video that resonates the most with you</p>
+				     </div>
+				     <div className='step-container'>
+				      <h2 className='text-uppercase'>Step 2</h2>
+				      <p>Copy the requester’s email address and paste it into the vendor’s 
+				      “gift card recipient” field</p>
+				    </div>
+				    <div className='step-container'>
+				      <h2 className='text-uppercase'>Step 3</h2>
+				      <p>Complete the purchase, and wait for the thank you video!</p>
+				    </div>
 		      </div>
 		      <img src={iphone_big} className='img-responsive'/>
 	      </div>
