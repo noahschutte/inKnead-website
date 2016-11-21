@@ -8,11 +8,9 @@ export default class RequestDonate extends Component {
       <div className='request'> 
       	<div className='request-donate-text-container'>
 	      	<h2 className='text-center text-uppercase'><b>Be a requester</b></h2>
-	      	<p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	      	Sed tortor lacus, imperdiet vitae nibh malesuada, 
-	      	egestas accumsan ligula. Nunc ullamcorper mauris et molestie auctor. 
-	      	Vivamus consequat tortor purus, nec vestibulum turpis ultrices et. 
-	      	Curabitur scelerisque viverra volutpat.</p>
+	      	<p className='text-center'>If you’ve ever requested a pizza through the RAoP community, 
+          you know how many hoops you have to jump through just to make sure your food gets to you. 
+          In Knead cuts through all the red tape to take all that stress off your shoulders.</p>
       	</div>
       </div>
     )
