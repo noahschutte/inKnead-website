@@ -1,0 +1,42 @@
+.one-step-container {
+
+	.one-step {
+		max-width: 1024px;
+		height: 620px;
+		margin: 0 auto;
+		div {
+			display: inline-block;
+			position: relative;
+		}
+		.one-step-iphone-container {
+			width: 42.4%;
+			// height: 425px;
+			margin-left: 42px;
+			top: 1%;
+			img {
+				width: 100%;
+			}
+		}
+		.one-step-text-container {
+			// margin-top: 45px;
+			display: inline-block;
+			left: 4%;
+			top: 15%;
+			vertical-align: top;
+			width: 380px;
+			h2 {
+				font-size: 42px;
+				font-family: UltraBeams;
+			}
+			p {
+				font-size: 18px;
+				font-family: 'AvenirNext-Regular';
+				margin-top: 50px;
+				line-height: 24px;
+				&:nth-child(n+3) {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}

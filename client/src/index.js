@@ -6,7 +6,8 @@ require('./stylesheets/mobile_responsive.scss');
 require('./stylesheets/main.scss');
 require('./stylesheets/platform.scss');
 require('./stylesheets/how_to.scss');
-require('./stylesheets/request.scss')
+require('./stylesheets/request.scss');
+require('./stylesheets/one_step.scss');
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
