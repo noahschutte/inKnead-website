@@ -1,0 +1,60 @@
+.how-to-container{
+		height: 950px;
+		background-color: #D0021B;
+	.how-to {
+		height: 950px;
+		margin: 0 auto;
+		max-width: 1024px;
+		overflow: hidden;
+		img {
+			width: 30%;
+			// margin: auto;
+			display: inline-block;
+			float: right;
+			// clear: right;
+			margin-top: 80px;
+			position: relative;
+			right: 68px;
+		}
+		.how-to-text-container {
+			// margin-top: 100px;
+			width: 44.5%;
+			margin: auto;
+			margin-top: 100px;
+			color: white;
+			h2 {
+				font-family: UltraBeams;
+				font-size: 44px;
+			}
+			p {
+				margin-top: 28px;
+				font-size: 16px;
+				font-family: 'AvenirNext-Regular';
+			}
+		}
+		.steps-container {
+			display: inline-block;
+			color: white;
+			margin-top: 130px;
+			position: relative;
+			left: 68px;
+			.step-container {
+				margin-top: 50px;
+				h2 {
+					font-family: UltraBeams;
+					font-size: 32px;
+					display: inline;
+					vertical-align: top;
+				}
+				p {
+					display: inline-block;
+					margin-top: 5px;
+					margin-left: 15px;
+					font-size: 18px;
+					font-family: 'AvenirNext-Regular';
+					width: 310px;
+				}
+			}
+		}
+	}
+}

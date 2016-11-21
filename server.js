@@ -6,36 +6,36 @@ var MailChimpAPI = require('mailchimp').MailChimpAPI;
  
 var apiKey = process.env.MAIL_CHIMP_API_KEY;
 
-https://us14.api.mailchimp.com/3.0
 
 try {
-    var api = new MailChimpAPI(apiKey, { version : '1.3', secure : false });
+  var api = new MailChimpAPI(apiKey, { version : '1.3', secure : false });
 } catch (error) {
-    console.log(error.message);
+  console.log('there is an error')
+  console.log(error.message);
 }
 
 // middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.set('port', (process.env.PORT || 3100));
+app.set('port', (process.env.PORT || 3001));
 
 // Express only serves static assets in production
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV == 'production') {
   app.use(express.static('client/build'));
 }
 
 
-app.get('/api/food', (req, res) => {
-  const param = req.query.q;
+// app.get('/api/food', (req, res) => {
+//   const param = req.query.q;
 
-  if (!param) {
-    res.json({
-      error: 'Missing required parameter `q`',
-    });
-    return;
-  }
-})
+//   if (!param) {
+//     res.json({
+//       error: 'Missing required parameter `q`',
+//     });
+//     return;
+//   }
+// })
 
 app.post('/landing_page', (req, res) => {
   console.log(typeof req.body.email);

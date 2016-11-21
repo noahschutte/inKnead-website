@@ -2,6 +2,7 @@
   "name": "inKnead-website",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "devDependencies": {
     "css-loader": "0.25.0",
     "node-sass": "3.4.2",
@@ -87,7 +88,5 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "proxy": "http://localhost:3100/",
-  "homepage": "http://http://inkneadwebsite-env.us-east-1.elasticbeanstalk.com/"
+  }
 }

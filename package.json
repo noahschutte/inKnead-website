@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nf start -p $port",
+    "start": "nf start -p $PORT",
     "dev": "nf start -p 3000 --procfile Procfile.dev",
     "server": "babel-node server.js"
   },
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/noahschutte/inKnead-website/issues"
   },
-  "homepage": "http://inkneadwebsite-env.us-east-1.elasticbeanstalk.com/",
+  "homepage": "https://inknead-website.herokuapp.com/",
   "dependencies": {
     "babel-cli": "6.14.0",
     "babel-core": "6.14.0",

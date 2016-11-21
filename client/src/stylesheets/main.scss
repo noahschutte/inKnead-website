@@ -3,41 +3,75 @@
   src: url('../../public/fonts/UltraBeams.ttf');
 }
 
+$desktop-med-width: 768px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
 body {
 	margin: 0;
 }
 .home-container {
 	background-color: #D0021B;
-	height: 600px;
+	height: 650px;
+	@include desktop-med {
+		height: 475px;
+	}
 	.home {
 		max-width: 1024px;
-		height: 600px;
+		height: 650px;
 		margin: 0 auto;
+		@include desktop-med {
+			height: 475px;
+			max-width: 768px;
+		}
 		.main-text{
 			display: inline-block;
 			position: relative;
 			float: left;
 			clear: left;
 			left: 42px;
-			top: 20%;
+			top: 27%;
+			@include desktop-med {
+				top: 18%;
+			}
 			.headline {
 				width: 550px;
-				p {
+				@include desktop-med {
+					width: 400px;
+				}
+				h1 {
 					color: white;
 					// font-weight: bold;
 					font-size: 56px;
 					font-family: UltraBeams;
-					margin: 0px 0px 28px 0px;
+					margin: 0px 0px 15px 0px;
+					@include desktop-med {
+						font-size: 44px;
+					}
 				}
 			}
 			.headline-info-temp {
-				width: 425px;
+				width: 540px;
+				@include desktop-med {
+					width: 375px;
+				}
+				h4 {
+					margin-top: 15px;
+					color: white;
+					font-size: 22px;
+					font-family: 'AvenirNext-Regular';
+				}
 				p {
-				color: white;
-				// font-weight: regular;
-				font-size: 16px;
-				font-family: 'AvenirNext-Regular';
-				// font-weight: 400;
+					margin-top: 50px;
+					color: white;
+					font-size: 18px;
+					font-family: 'AvenirNext-Regular';
+				}
+				@include desktop-med {
+					font-size: 12px;
 				}
 			}
 		}
@@ -51,15 +85,21 @@ body {
 				left: 48px;
 				// margin: 0 0 0 4%;
 				.logo {
-					height: 65px;
+					height: 50px;
+					@include desktop-med {
+						height: 50px;
+					}
 				}
 			}
 			.social-container {
 				display: inline-block;
 				position: relative;
-				height: 65px;
+				height: 36px;
 				float: right;
 				right: 48px;
+				@include desktop-med {
+					height: 50px;
+				}
 				.social-icons {
 					margin: 0 0 0 28px;
 					height: 100%;
@@ -71,18 +111,27 @@ body {
 			position: relative;
 			float: right;
 			clear: right;
-			margin: 0 10% 0 0;
-			top: 16%;
-			width: 275px;
-			height: 73.1%;
+			margin: 0 4% 0 0;
+			top: 17%;
+			width: 34%;
+			height: 75.3%;
 			overflow: hidden;
+			@include desktop-med {
+				width: 235px;
+				margin: 0 6% 0 0;
+				top: 14%;
+				height: 75.4%;
+			}
 			.iphone {
 				// overflow: hidden;
 				// height: 500px;
 			}
 		}
 		.email-form-container {
-			margin-top: 60px;
+			// margin-top: 50px;
+			@include desktop-med {
+				margin-top: 30px;
+			}
 			.email-input::-webkit-input-placeholder {
 			  color: white;
 				font-size: 16px;
@@ -115,7 +164,13 @@ body {
 		}
 		
 		.learn-demo-container {
-			margin-top: 60px;
+			margin-top: 22px;
+			img {
+				height: 53px;
+			}
+			@include desktop-med {
+				margin-top: 30px;
+			}
 			.demo-button {
 				background-color: white;
 				-moz-border-radius: 3px;
@@ -128,7 +183,8 @@ body {
 				font-family: 'AvenirNext-Regular';
 				font-size: 16px;
 				text-decoration: none;
-				padding: 13px 65px;
+				height: 38px;
+				width: 192px;
 				margin-left: 35px;
 			}
 			.learn-button {
@@ -145,99 +201,6 @@ body {
 				padding: 7px 56px;
 				text-decoration: none;
 				padding: 10px 40px;
-			}
-		}
-	}
-}
-.platform {
-	height: 545px;
-	h2 {
-			font-family: UltraBeams;
-			font-size: 44px;
-		}
-	.platform-text {
-		margin-top: 100px;
-	}
-	.platform-info {
-		font-family: 'AvenirNext-Regular';
-		color: #4A4A4A;
-		width: 619px;
-		margin: 0 auto;
-		margin-top: 35px;
-	}
-}
-.food-icon-container {
-	text-align: center;
-	margin-top: 80px;
-
-	.food-descrip-container {
-		display: inline-block;
-		margin-right: 40px;
-		margin-left: 40px;
-		width: 250px;
-				font-family: 'AvenirNext-Regular';
-		b p{
-			margin-top: 35px;
-		}
-		p {
-			margin-top: 5px;
-			margin-bottom: 0px;
-			color: #4A4A4A;
-		}
-		img {
-			height: 124px;
-		}
-	}
-}
-.how-to-container{
-		height: 975px;
-		background-color: #D0021B;
-	.how-to {
-		height: 975px;
-		margin: 0 auto;
-		max-width: 1024px;
-		overflow: hidden;
-		img {
-			width: 27%;
-			// margin: auto;
-			display: inline-block;
-			float: right;
-			// clear: right;
-			margin-top: 80px;
-			position: relative;
-			right: 68px;
-		}
-		.how-to-text-container {
-			// margin-top: 100px;
-			width: 65%;
-			margin: auto;
-			margin-top: 100px;
-			color: white;
-			h2 {
-				font-family: UltraBeams;
-				font-size: 44px;
-			}
-			p {
-				margin-top: 28px;
-				font-size: 16px;
-				font-family: 'AvenirNext-Regular';
-			}
-		}
-		.steps-container {
-			display: inline-block;
-			color: white;
-			margin-top: 80px;
-			position: relative;
-			left: 68px;
-			h2 {
-				font-family: UltraBeams;
-				font-size: 44px;
-			}
-			p {
-				margin-top: 5px;
-				font-size: 16px;
-				font-family: 'AvenirNext-Regular';
-				width: 400px;
 			}
 		}
 	}
@@ -404,130 +367,6 @@ footer {
 }
 
 
-// mobile format
-@media (max-device-width: 780px) {
-	body {
-		background-color: blue;
-	}
-	.logo-container {
-		position: relative;
-		top: 3%;
-		float: left;
-		margin: 0 0 0 2%;
-		.logo {
-			height: 70px;
-		}
-	}
-	.social-container {
-		position: relative;
-		top: 3%;
-		float: right;
-		margin: -1% 3% 0 0;
-		height: 70px;
-		.social-icons {
-			margin: 0 0 0 30px;
-			height: 50%;
-			visibility: hidden;
-		}
-		.share-icon {
-			height: 100%;
-			visibility: visible;
-		}
-	}
-	.home {
-		height: 1100px;
-	}	
-	.main-text{
-		position: relative;
-		left: -10%;
-		top: 10%;
-		.headline {
-			width: 580px;
-			p {
-				color: white;
-				font-weight: bold;
-				font-size: 70px;
-				font-family: 'Roboto', sans-serif;
-				margin: 0px 0px 20px 0px;
-			}
-		}
-		.headline-info-temp {
-			width: 575px;
-			p {
-			color: white;
-			// font-weight: regular;
-			font-size: 25px;
-			font-family: 'Roboto-regular', sans-serif;
-			// font-weight: 400;
-			}
-		}
-	}
-	.iphone-container {
-		// height: 83%;
-		position: relative;
-		float: right;
-		margin: 0 18% 0 0;
-		top: 15%;
-		width: 62%;
-		overflow: hidden;
-		.iphone {
-			// height: 500px;
-		}
-	}
-	.email-input::-webkit-input-placeholder {
-	  color: white;
-		font-size: 35px;
-		font-family: 'Roboto-Regular', sans-serif;
-	}
-
-	.email-input {
-		background-color: rgba(210, 114, 101, 1);
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		padding: 10px 30px;
-		border: none;
-		font-size: 35px;
-		color: white;
-	}
-
-	.white-button {
-		background-color: white;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px;
-		border: none;
-		display: inline-block;
-		cursor: pointer;
-		color: rgba(210, 114, 101, 1);
-		font-family: 'Roboto-Regular', sans-serif;
-		font-size: 35px;
-		padding: 10px 50px;
-		text-decoration: none;
-	}
-
-	.learn-demo-container {
-		margin-top: 60px;
-		.learn-button {
-			padding: 10px 40px;
-		}
-		.demo-button {
-			background-color: rgba(231, 76, 60, 1);
-			-moz-border-radius: 3px;
-			-webkit-border-radius: 3px;
-			border-radius: 3px;
-			border: 3px solid white;
-			display: inline-block;
-			cursor: pointer;
-			color: white;
-			font-family: 'Roboto-Medium', sans-serif;
-			font-size: 35px;
-			padding: 7px 56px;
-			text-decoration: none;
-			margin-left: 35px;
-		}
-	}
-}
 // bootstrap mods
 .container-fluid {
 	padding-left: 0;
@@ -537,42 +376,3 @@ footer {
 
 
 // recycle
-// .request-donate {
-// 	height: 450px;
-// 	.arrow-container {
-// 		text-align: center;
-// 		img {
-// 			height: 56px;
-// 		}
-// 	}
-// 	.request-donate-text-container {
-// 		// margin-top: 70px;
-// 		width: 67%;
-// 		margin: 70px auto;
-// 		h2 {
-// 			color: white;
-// 			font-weight: bold;
-// 			font-size: 32px;
-// 			font-family: UltraBeams;
-// 		}
-// 		p {
-// 			margin-top: 80px;
-// 			color: white;
-// 			font-size: 14px;
-// 			font-family: 'Roboto-Regular', sans-serif;
-// 		}
-// 	}
-// 	.request {
-// 		background-color: rgba(231, 76, 60, 1);
-// 		height: 100%;
-// 		width: 50%;
-// 		display: inline-block;
-// 	}
-// 	.donate {
-// 		background-color: rgba(210, 114, 101, 1);
-// 		height: 100%;
-// 		width: 50%;
-// 		display: inline-block;
-// 	}
-
-// }
