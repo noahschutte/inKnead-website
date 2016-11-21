@@ -53,8 +53,8 @@ export default class Home extends Component {
 					</div>
 				</div>
 				<Platform />
-				{/*<RequestDonate />*/}
 				<HowTo />
+				<RequestDonate />
 				<OneStep />
 				<Creators />
 				<Subscribe />
