@@ -3,7 +3,7 @@
   src: url('../../public/fonts/UltraBeams.ttf');
 }
 
-$desktop-med-width: 768px;
+$desktop-med-width: 910px;
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
 		@content;
@@ -113,7 +113,7 @@ body {
 			position: relative;
 			float: right;
 			clear: right;
-			margin: 0 4% 0 0;
+			margin: 0 5% 0 0;
 			top: 17%;
 			width: 34%;
 			height: 75.3%;
@@ -171,6 +171,9 @@ body {
 			margin-top: 22px;
 			img {
 				height: 53px;
+				@include desktop-med {
+					height: 43px;
+				}
 			}
 			@include desktop-med {
 				margin-top: 30px;
@@ -187,8 +190,8 @@ body {
 				font-family: 'AvenirNext-Regular';
 				font-size: 16px;
 				text-decoration: none;
-				height: 38px;
-				width: 192px;
+				height: 34px;
+				width: 160px;
 				margin-left: 35px;
 			}
 			.learn-button {

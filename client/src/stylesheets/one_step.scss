@@ -1,9 +1,19 @@
-.one-step-container {
+$desktop-med-width: 910px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
 
+.one-step-container {
+	margin-top: 50px;
 	.one-step {
 		max-width: 1024px;
 		height: 620px;
-		margin: 0 auto;
+		margin: auto;
+		@include desktop-med {
+			height: 500px;
+		}
 		div {
 			display: inline-block;
 			position: relative;
@@ -24,6 +34,9 @@
 			top: 15%;
 			vertical-align: top;
 			width: 380px;
+			@include desktop-med {
+				top: 5%;
+			}
 			h2 {
 				font-size: 42px;
 				font-family: UltraBeams;

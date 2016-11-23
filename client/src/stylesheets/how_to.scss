@@ -1,11 +1,24 @@
+$desktop-med-width: 910px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
 .how-to-container{
 		height: 950px;
 		background-color: #D0021B;
+		@include desktop-med {
+			height: 800px;
+		}
 	.how-to {
 		height: 950px;
 		margin: 0 auto;
 		max-width: 1024px;
 		overflow: hidden;
+		@include desktop-med {
+			height: 800px;
+		}
 		img {
 			width: 30%;
 			// margin: auto;
@@ -15,6 +28,9 @@
 			margin-top: 80px;
 			position: relative;
 			right: 68px;
+			@include desktop-med {
+				margin-top: 40px;
+			}
 		}
 		.how-to-text-container {
 			// margin-top: 100px;
@@ -22,6 +38,9 @@
 			margin: auto;
 			margin-top: 100px;
 			color: white;
+			@include desktop-med {
+				margin-top: 50px;
+			}
 			h2 {
 				font-family: UltraBeams;
 				font-size: 44px;
@@ -38,6 +57,9 @@
 			margin-top: 130px;
 			position: relative;
 			left: 68px;
+			@include desktop-med {
+				margin-top: 60px;
+			}
 			.step-container {
 				margin-top: 50px;
 				h2 {
