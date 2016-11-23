@@ -1,0 +1,39 @@
+$desktop-med-width: 910px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
+footer {
+	background-color: black;
+	height: 180px;
+	text-align: center;
+	@include desktop-med {
+		height: 100px;
+	}
+	div {
+		display: inline-block;
+		margin: auto;
+		p {
+			margin: 40px 55px;
+			display: inline-block;
+			color: #4A4A4A;
+			font-family: 'AvenirNext-Regular';
+			font-size: 16px;
+			@include desktop-med {
+				font-size: 14px;
+				margin: 25px 40px;
+			}
+		}
+	}
+	p {
+		// margin-top: ;
+		color: #4A4A4A;
+		font-family: 'AvenirNext-Regular';
+		font-size: 16px;
+		@include desktop-med {
+			font-size: 14px;
+		}
+	}
+}

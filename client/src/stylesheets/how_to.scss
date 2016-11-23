@@ -9,7 +9,7 @@ $desktop-med-width: 910px;
 		height: 950px;
 		background-color: #D0021B;
 		@include desktop-med {
-			height: 800px;
+			height: 650px;
 		}
 	.how-to {
 		height: 950px;
@@ -17,7 +17,7 @@ $desktop-med-width: 910px;
 		max-width: 1024px;
 		overflow: hidden;
 		@include desktop-med {
-			height: 800px;
+			height: 650px;
 		}
 		img {
 			width: 30%;
@@ -38,8 +38,10 @@ $desktop-med-width: 910px;
 			margin: auto;
 			margin-top: 100px;
 			color: white;
+
 			@include desktop-med {
 				margin-top: 50px;
+				width: 60%;
 			}
 			h2 {
 				font-family: UltraBeams;
@@ -62,11 +64,17 @@ $desktop-med-width: 910px;
 			}
 			.step-container {
 				margin-top: 50px;
+				@include desktop-med {
+					margin-top: 30px;
+				}
 				h2 {
 					font-family: UltraBeams;
 					font-size: 32px;
 					display: inline;
 					vertical-align: top;
+					@include desktop-med {
+						font-size: 28px;
+					}
 				}
 				p {
 					display: inline-block;
@@ -75,6 +83,10 @@ $desktop-med-width: 910px;
 					font-size: 18px;
 					font-family: 'AvenirNext-Regular';
 					width: 310px;
+					@include desktop-med {
+						font-size: 14px;
+						width: 260px;
+					}
 				}
 			}
 		}

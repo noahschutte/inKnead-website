@@ -1,0 +1,85 @@
+$desktop-med-width: 910px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
+.creators-container{
+		height: 600px;
+		background-color: grey;
+		overflow: hidden;
+		@include desktop-med {
+			height: 350px;
+		}
+	.creators {
+		margin: 0 auto;
+		height: 600px;
+		max-width: 1024px;
+		@include desktop-med {
+			height: 350px;
+		}
+		h2 {
+			font-size: 44px;
+			font-family: UltraBeams;
+			margin-top: 100px;
+			@include desktop-med {
+				margin-top: 30px;
+			}
+		}
+		.staff-container {
+			text-align: center;
+			margin-top: 100px;
+			@include desktop-med {
+				margin-top: 30px;
+			}
+			.individual {
+					display: inline-block;
+					margin: auto 50px;
+					@include desktop-med {
+						margin: auto 25px;
+					}
+				#circle {
+					width: 120px;
+					height: 120px;
+					background-color: blue;
+					-moz-border-radius: 50%;
+					-webkit-border-radius: 50%;
+					border-radius: 50%;
+					@include desktop-med {
+						width: 90px;
+						height: 90px;
+					}
+				}
+				img {
+					margin: 0 10px;
+					margin-top: 16px;
+					height: 35px;
+					width: 35px;
+					@include desktop-med {
+						width: 30px;
+						height: 30px;
+						margin: 0 5px;
+						margin-top: 5px;
+					}
+				}
+				b p {
+					margin-top: 20px;
+					font-size: 20px;
+					font-family: 'AvenirNext-Regular';
+					@include desktop-med {
+						margin-top: 10px;
+						font-size: 16px;
+					}
+				}
+				p {
+					font-size: 16px;
+					font-family: 'AvenirNext-Regular';
+					@include desktop-med {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
