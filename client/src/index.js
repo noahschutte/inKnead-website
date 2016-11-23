@@ -11,6 +11,7 @@ require('./stylesheets/one_step.scss');
 require('./stylesheets/creators.scss');
 require('./stylesheets/subscribe.scss')
 require('./stylesheets/footer.scss');
+import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 

@@ -1,22 +1,40 @@
 import React, { Component } from 'react';
 import email from '../../public/images/icon_email@2x.png';
+import $ from 'jquery';
 
 export default class Subscribe extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {test: ''};
+		this.state = {email: ''};
 
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 	handleChange(e) {
-		console.log(this);
-		console.log(e.target.value);
-		this.setState({test: e.target.value});
+		// console.log(this);
+		// console.log(e.target.value);
+		this.setState({email: e.target.value});
 	}
 	handleSubmit(e) {
-		console.log(this.state.test)
+		// console.log(this.state.email)
 		e.preventDefault();
+		this.mailChimp(this.state.email)
+	}
+	mailChimp(email) {
+		console.log(email);
+		$.ajax({
+			url: '/landing_page',
+			method: "POST",
+			data: {
+				email: email,
+			},
+			success: function(data) {
+				console.log(data);
+			},
+			error: function(xhr, status, err) {
+				console.log(status, err.toString());
+			}
+		});
 	}
   render() {
     return (
