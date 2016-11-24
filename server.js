@@ -24,6 +24,7 @@ app.set('port', (process.env.PORT || 3001));
 if (process.env.NODE_ENV == 'production') {
   app.use(express.static('client/build'));
 }
+  app.use(express.static('client/build'));
 
 
 // app.get('/api/food', (req, res) => {
@@ -40,7 +41,7 @@ if (process.env.NODE_ENV == 'production') {
 app.post('/landing_page', (req, res) => {
   console.log(typeof req.body.email);
   var email = req.body.email;
-  res.json("herro")
+  // res.json("herro")
   var subscriber = JSON.stringify({
       "email_address": email,
       "status": "subscribed"
@@ -68,15 +69,20 @@ app.post('/landing_page', (req, res) => {
 
   request(options, function(error, response, body) {
     console.log("in request")
-    console.log(response.body)
-    console.log(error)
+    console.log(typeof response.body)
+    // console.log(response)
+    var responseDetail = JSON.parse(response.body).detail
+    // console.log(test1.detail);
+    // console.log(error)
     if (!error && response.statusCode == 200) {
       console.log('success')
-      console.log(body)
+      // console.log(body)
+      res.send('success');
+    } else {
+      res.send(responseDetail);
     }
   })
 
-  return;
 })
 
 app.listen(app.get('port'), () => {
