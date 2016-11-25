@@ -7,8 +7,8 @@ export default class Subscribe extends Component {
 		super(props);
 		this.state = {
 			email: '',
-			test: null,
-			test2: ''
+			status: null,
+			returnMessage: ''
 		};
 
 		this.handleChange = this.handleChange.bind(this);
@@ -37,16 +37,16 @@ export default class Subscribe extends Component {
 			success: function(data) {
 				console.log(data);
 				if (data == 'success') {
-					test1.setState({test: true})
-					test1.setState({test2: 'Success'})
+					test1.setState({status: true})
+					test1.setState({returnMessage: 'Success!'})
 				} else {
-					test1.setState({test: false})
-					test1.setState({test2: data})
+					test1.setState({status: false})
+					test1.setState({returnMessage: data})
 				}
-				console.log(test1.state)
+				// console.log(test1.state)
 			},
 			error: function(xhr, status, err) {
-				console.log(status, err.toString());
+				// console.log(status, err.toString());
 			}
 		});
 	}
@@ -62,7 +62,7 @@ export default class Subscribe extends Component {
 							<input type='text' name='email' placeholder='Your E-mail' className='email-input' onChange={this.handleChange}/>
 							<input type='submit' className='white-button' />
 						</form>
-						{(this.state.test ? <div>{this.state.test2}</div> : <div>{this.state.test2}</div>)}
+						{(this.state.status ? <div>{this.state.returnMessage}</div> : <div>{this.state.returnMessage}</div>)}
 					</div>
 	    	</div>
       </div>
