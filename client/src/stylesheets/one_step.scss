@@ -1,0 +1,69 @@
+$desktop-med-width: 910px;
+@mixin desktop-med {
+	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+
+.one-step-container {
+	margin-top: 50px;
+	@include desktop-med {
+		margin-top: 0px;
+	}
+	.one-step {
+		max-width: 1024px;
+		height: 620px;
+		margin: auto;
+		@include desktop-med {
+			height: 400px;
+		}
+		div {
+			display: inline-block;
+			position: relative;
+		}
+		.one-step-iphone-container {
+			width: 42.4%;
+			// height: 425px;
+			margin-left: 42px;
+			top: 1%;
+			img {
+				width: 100%;
+			}
+		}
+		.one-step-text-container {
+			// margin-top: 45px;
+			display: inline-block;
+			left: 4%;
+			top: 15%;
+			vertical-align: top;
+			width: 380px;
+			@include desktop-med {
+				top: 4%;
+				width: 300px;
+			}
+			h2 {
+				font-size: 42px;
+				font-family: UltraBeams;
+				@include desktop-med {
+					font-size: 34px;
+				}
+			}
+			p {
+				font-size: 18px;
+				font-family: 'AvenirNext-Regular';
+				margin-top: 50px;
+				line-height: 24px;
+				@include desktop-med {
+					margin-top: 20px;
+					font-size: 14px;
+				}
+				&:nth-child(n+3) {
+					margin-top: 40px;
+					@include desktop-med {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}
