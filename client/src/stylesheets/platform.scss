@@ -1,6 +1,13 @@
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
 		@content;
 	}
 }
@@ -10,9 +17,15 @@ $desktop-med-width: 910px;
 	@include desktop-med {
 		height: 550px;
 	}
+	@include phone {
+		height: 1400px;
+	}
 	h2 {
 		font-family: UltraBeams;
 		font-size: 42px;
+		@include phone {
+			font-size: 36px;
+		}
 	}
 	.platform-text {
 		margin-top: 100px;
@@ -33,6 +46,11 @@ $desktop-med-width: 910px;
 			font-size: 18px;
 			width: 500px;
 		}
+		@include phone {
+			width: 309px;
+			font-size: 18px;
+			line-height: 24px;
+		}
 	}
 }
 .food-icon-container {
@@ -51,6 +69,10 @@ $desktop-med-width: 910px;
 			margin-right: 20px;
 			margin-left: 20px;
 		}
+		@include phone {
+			margin-top: 80px;
+			width: 309px;
+		}
 		b p{
 			font-family: 'AvenirNext-Medium';
 			margin-top: 35px;
@@ -58,6 +80,10 @@ $desktop-med-width: 910px;
 			@include desktop-med {
 				font-size: 16px;
 				margin-top: 15px;
+			}
+			@include phone {
+				font-size: 18px;
+				margin-top: 40px;
 			}
 		}
 		p {
@@ -69,11 +95,17 @@ $desktop-med-width: 910px;
 				margin-top: 5px;
 				font-size: 13px;
 			}
+			@include phone {
+				margin-top: 15px;
+			}
 		}
 		img {
 			height: 124px;
 			@include desktop-med {
 				height: 75px;
+			}
+			@include phone {
+				height: 124px;
 			}
 		}
 	}
