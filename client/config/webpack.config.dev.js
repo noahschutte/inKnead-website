@@ -8,6 +8,7 @@ var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
+var S3Plugin = require('webpack-s3-plugin')
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -189,7 +190,23 @@ module.exports = {
     // to restart the development server for Webpack to discover it. This plugin
     // makes the discovery automatic so you don't have to restart.
     // See https://github.com/facebookincubator/create-react-app/issues/186
-    new WatchMissingNodeModulesPlugin(paths.appNodeModules)
+    new WatchMissingNodeModulesPlugin(paths.appNodeModules),
+    // new S3Plugin({
+    //   // Exclude uploading of html
+    //   exclude: /.*\.html$/,
+    //   // s3Options are required
+    //   s3Options: {
+    //     accessKeyId: process.env.AWS_INKNEAD_ACCESS,
+    //     secretAccessKey: process.env.AWS_INKNEAD_SECRET,
+    //     region: 'us-east-1'
+    //   },
+    //   s3UploadOptions: {
+    //     Bucket: 'inknead-web-bucket'
+    //   },
+    //   cdnizerOptions: {
+    //     defaultCDNBase: 'http://asdf.ca'
+    //   }
+    // })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.

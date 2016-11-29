@@ -1,4 +1,5 @@
 $desktop-med-width: 910px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
 		@content;

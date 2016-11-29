@@ -4,11 +4,19 @@
 }
 
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
 		@content;
 	}
 }
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
+		@content;
+	}
+}
+
 
 body {
 	margin: 0;
@@ -19,6 +27,9 @@ body {
 	@include desktop-med {
 		height: 475px;
 	}
+	@include phone {
+		height: 1029px;
+	}
 	.home {
 		max-width: 1024px;
 		height: 650px;
@@ -26,6 +37,10 @@ body {
 		@include desktop-med {
 			height: 475px;
 			max-width: 768px;
+		}
+		@include phone {
+			height: 1029px;
+			max-width: 640px;
 		}
 		.main-text{
 			display: inline-block;
@@ -37,10 +52,14 @@ body {
 			@include desktop-med {
 				top: 18%;
 			}
+			@include phone {
+				top: 12%;
+				left: 33px;
+			}
 			.headline {
 				width: 550px;
 				@include desktop-med {
-					width: 400px;
+					width: 300px;
 				}
 				h1 {
 					color: white;
@@ -51,12 +70,15 @@ body {
 					@include desktop-med {
 						font-size: 44px;
 					}
+					@include phone {
+						font-size: 44px;
+					}
 				}
 			}
 			.headline-info-temp {
 				width: 540px;
 				@include desktop-med {
-					width: 375px;
+					width: 300px;
 				}
 				h4 {
 					margin-top: 15px;
@@ -64,6 +86,9 @@ body {
 					font-size: 22px;
 					font-family: 'AvenirNext-Regular';
 					line-height: 24px;
+					@include phone {
+						font-size: 18px;
+					}
 				}
 				p {
 					margin-top: 50px;
@@ -71,6 +96,9 @@ body {
 					font-size: 18px;
 					font-family: 'AvenirNext-Regular';
 					line-height: 24px;
+					@include phone {
+						font-size: 14px;
+					}
 				}
 				@include desktop-med {
 					font-size: 12px;
@@ -86,9 +114,15 @@ body {
 				float: left;
 				left: 48px;
 				// margin: 0 0 0 4%;
+				@include phone {
+					left: 33px;
+				}
 				.logo {
 					height: 50px;
 					@include desktop-med {
+						height: 50px;
+					}
+					@include phone {
 						height: 50px;
 					}
 				}
@@ -101,6 +135,9 @@ body {
 				right: 48px;
 				@include desktop-med {
 					height: 50px;
+				}
+				@include phone {
+					display: none;
 				}
 				.social-icons {
 					margin: 0 0 0 28px;
@@ -123,6 +160,15 @@ body {
 				margin: 0 6% 0 0;
 				top: 14%;
 				height: 75.4%;
+			}
+			@include phone { 
+				// display: none;
+				top: 22%;
+				float: none;
+				clear: none;
+				width: 310px;
+				margin: 0 auto;
+				height: 423px;
 			}
 			.iphone {
 				// overflow: hidden;
@@ -174,6 +220,9 @@ body {
 				@include desktop-med {
 					height: 43px;
 				}
+				@include phone {
+					height: 53px;
+				}
 			}
 			@include desktop-med {
 				margin-top: 30px;
@@ -193,6 +242,14 @@ body {
 				height: 34px;
 				width: 160px;
 				margin-left: 35px;
+				@include phone {
+					display: block;
+					position: relative;
+					top: 22px;
+					left: -33px;
+					height: 38px;
+					width: 192px;
+				}
 			}
 			.learn-button {
 				background-color: #D0021B;
