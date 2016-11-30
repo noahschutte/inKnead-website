@@ -1,6 +1,13 @@
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
 		@content;
 	}
 }
@@ -11,6 +18,9 @@ $desktop-med-width: 910px;
 		@include desktop-med {
 			height: 650px;
 		}
+		@include phone {
+			height: 1400px;
+		}
 	.how-to {
 		height: 950px;
 		margin: 0 auto;
@@ -19,6 +29,10 @@ $desktop-med-width: 910px;
 		@include desktop-med {
 			height: 650px;
 		}
+		@include phone {
+			height: 1400px;
+		}
+
 		img {
 			width: 30%;
 			// margin: auto;
@@ -30,6 +44,16 @@ $desktop-med-width: 910px;
 			right: 68px;
 			@include desktop-med {
 				margin-top: 40px;
+			}
+			@include phone {
+				width: 80%;
+				text-align: center;
+				margin-top: 100px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				float: none;
+				right: 0;
 			}
 		}
 		.how-to-text-container {
@@ -43,6 +67,10 @@ $desktop-med-width: 910px;
 				margin-top: 50px;
 				width: 60%;
 			}
+			@include phone {
+				width: 80%;
+				margin-top: 100px;
+			}
 			h2 {
 				font-family: UltraBeams;
 				font-size: 44px;
@@ -51,6 +79,9 @@ $desktop-med-width: 910px;
 				margin-top: 28px;
 				font-size: 16px;
 				font-family: 'AvenirNext-Regular';
+				@include phone {
+					margin-top: 30px;
+				}
 			}
 		}
 		.steps-container {
@@ -62,10 +93,17 @@ $desktop-med-width: 910px;
 			@include desktop-med {
 				margin-top: 60px;
 			}
+			@include phone {
+				margin-top: 80px;
+				left: 33px;
+			}
 			.step-container {
 				margin-top: 50px;
 				@include desktop-med {
 					margin-top: 30px;
+				}
+				@include phone {
+					margin-top: 40px;
 				}
 				h2 {
 					font-family: UltraBeams;
@@ -86,6 +124,9 @@ $desktop-med-width: 910px;
 					@include desktop-med {
 						font-size: 14px;
 						width: 260px;
+					}
+					@include phone {
+						width: 242px;
 					}
 				}
 			}
