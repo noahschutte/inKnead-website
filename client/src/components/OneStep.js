@@ -10,7 +10,7 @@ export default class OneStep extends Component {
     				<img src={iphone} className='img-responsive'/>
     			</div>
           <div className='one-step-text-container'>
-          	<h2 className='text-uppercase'>One step to request</h2>
+          	<h2 className='text-uppercase text-center'>One step to request</h2>
           	<p><i className="fa fa-caret-right"></i> Upload a short video (No longer than 20 seconds)</p>
             <p><i className="fa fa-caret-right"></i> Decide how many pizzas you need and where you’d like them to come from.</p>
             <p><i className="fa fa-caret-right"></i> Submit!</p>
