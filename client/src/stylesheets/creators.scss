@@ -1,17 +1,26 @@
 $desktop-med-width: 910px;
+$phone: 640px;
 
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
 		@content;
 	}
 }
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
+		@content;
+	}
+}
 
 .creators-container{
 		height: 600px;
-		background-color: grey;
+		background-color: #FAFAFA;
 		overflow: hidden;
 		@include desktop-med {
 			height: 350px;
+		}
+		@include phone {
+			height: 1480px;
 		}
 	.creators {
 		margin: 0 auto;
@@ -20,12 +29,18 @@ $desktop-med-width: 910px;
 		@include desktop-med {
 			height: 350px;
 		}
+		@include phone {
+			height: 1480px;
+		}
 		h2 {
 			font-size: 44px;
 			font-family: UltraBeams;
 			margin-top: 100px;
 			@include desktop-med {
 				margin-top: 30px;
+			}
+			@include phone {
+				margin-top: 100px;
 			}
 		}
 		.staff-container {
@@ -34,11 +49,19 @@ $desktop-med-width: 910px;
 			@include desktop-med {
 				margin-top: 30px;
 			}
+			@include phone {
+				margin-top: 50px;
+			}
 			.individual {
 					display: inline-block;
 					margin: auto 50px;
 					@include desktop-med {
 						margin: auto 25px;
+					}
+					@include phone {
+						margin-top: 50px;
+						margin-left: 100px;
+						margin-right: 100px;
 					}
 				#circle {
 					width: 120px;
@@ -50,6 +73,10 @@ $desktop-med-width: 910px;
 					@include desktop-med {
 						width: 90px;
 						height: 90px;
+					}
+					@include phone {
+						width: 120px;
+						height: 120px;
 					}
 				}
 				img {
@@ -72,12 +99,19 @@ $desktop-med-width: 910px;
 						margin-top: 10px;
 						font-size: 16px;
 					}
+					@include phone {
+						margin-top: 20px;
+						font-size: 20px;
+					}
 				}
 				p {
 					font-size: 16px;
 					font-family: 'AvenirNext-Regular';
 					@include desktop-med {
 						font-size: 14px;
+					}
+					@include phone {
+						font-size: 16px;
 					}
 				}
 			}
