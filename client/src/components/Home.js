@@ -8,7 +8,7 @@ import Subscribe from './Subscribe';
 import Footer from './Footer';
 import facebook2x from '../../public/images/icon_facebook@2x.png';
 import twitter2x from '../../public/images/icon_twitter@2x.png';
-import iphone_big from '../../public/images/iphone_big.png';
+import iphone_big from '../../public/images/iphone_6_1@2x.png';
 import download from '../../public/images/download@2x.png';
 
 

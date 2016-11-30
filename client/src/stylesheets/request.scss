@@ -1,18 +1,31 @@
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
 		@content;
 	}
 }
 
 .request {
 	height: 200px;
+	@include phone {
+		height: 320px;
+	}
 	h2 {
 		font-family: UltraBeams;
 		font-size: 42px;
 		margin-top: 100px;
 		@include desktop-med {
 			margin-top: 50px;
+		}
+		@include phone {
+			margin-top: 100px;
 		}
 	}
 	p {
@@ -25,6 +38,10 @@ $desktop-med-width: 910px;
 		@include desktop-med {
 			font-size: 16px;
 			line-height: 20px;
+		}
+		@include phone {
+			margin-top: 30px;
+			width: 74%;
 		}
 	}
 }
