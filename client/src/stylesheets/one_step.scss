@@ -61,9 +61,10 @@ $phone: 640px;
 				width: 300px;
 			}
 			@include phone {
-				margin-left: 33px;
+				margin-left: 18px;
 				top: 0;
 				order: 1;
+				width: 269px;
 			}
 			h2 {
 				font-size: 42px;

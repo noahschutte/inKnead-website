@@ -17,7 +17,6 @@ $phone: 640px;
 	}
 }
 
-
 body {
 	margin: 0;
 }
@@ -61,6 +60,9 @@ body {
 				@include desktop-med {
 					width: 300px;
 				}
+				@include phone {
+					width: 280px;
+				}
 				h1 {
 					color: white;
 					// font-weight: bold;
@@ -79,6 +81,9 @@ body {
 				width: 540px;
 				@include desktop-med {
 					width: 300px;
+				}
+				@include phone {
+					width: 260px;
 				}
 				h4 {
 					margin-top: 15px;
