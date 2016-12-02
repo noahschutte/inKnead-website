@@ -16,6 +16,7 @@ $phone: 640px;
 	height: 200px;
 	@include phone {
 		height: 310px;
+		min-width: 320px;
 	}
 	h2 {
 		font-family: UltraBeams;

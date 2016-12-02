@@ -21,6 +21,7 @@ footer {
 	}
 	@include phone {
 		height: 350px;
+		min-width: 320px;
 	}
 	div {
 		display: inline-block;

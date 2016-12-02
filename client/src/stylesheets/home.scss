@@ -28,6 +28,7 @@ body {
 	}
 	@include phone {
 		height: 1029px;
+		min-width: 320px;
 	}
 	.home {
 		max-width: 1024px;
