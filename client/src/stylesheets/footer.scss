@@ -1,6 +1,13 @@
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
 		@content;
 	}
 }
@@ -12,6 +19,9 @@ footer {
 	@include desktop-med {
 		height: 100px;
 	}
+	@include phone {
+		height: 350px;
+	}
 	div {
 		display: inline-block;
 		margin: auto;
@@ -21,19 +31,35 @@ footer {
 			color: #4A4A4A;
 			font-family: 'AvenirNext-Regular';
 			font-size: 16px;
+			&:nth-child(1) {
+				@include phone {
+					margin-top: 75px;
+				}
+			}
 			@include desktop-med {
 				font-size: 14px;
 				margin: 25px 40px;
+			}
+			@include phone {
+				margin: 30px 70px;
+				font-size: 12px;
+				width: 100px;
 			}
 		}
 	}
 	p {
 		// margin-top: ;
-		color: #4A4A4A;
+		display: inline-block;
+		text-align: center;
+		color: #9B9B9B;
 		font-family: 'AvenirNext-Regular';
 		font-size: 16px;
 		@include desktop-med {
 			font-size: 14px;
+		}
+		@include phone {
+			font-size: 12px;
+			width: 230px;
 		}
 	}
 }
