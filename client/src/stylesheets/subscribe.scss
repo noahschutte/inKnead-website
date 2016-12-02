@@ -1,6 +1,13 @@
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
 		@content;
 	}
 }
@@ -13,16 +20,25 @@ $desktop-med-width: 910px;
 	@include desktop-med {
 		height: 250px;
 	}
+	@include phone {
+		height: 440px;
+	}
 	div {
 		margin-top: 35px;
 		text-align: center;
 		@include desktop-med {
 			margin-top: 20px;
 		}
+		@include phone {
+			margin-top: 30px;
+		}
 		img {
 			width: 45px;
 			@include desktop-med {
 				width: 30px;
+			}
+			@include phone {
+				width: 45px;
 			}
 		}
 		p {
@@ -34,15 +50,24 @@ $desktop-med-width: 910px;
 				margin-top: 20px;
 				font-size: 14px;
 			}
+			@include phone {
+				margin-top: 30px;
+			}
 		}
 		.email-form-container {
 			margin-top: 20px;
+			@include phone {
+				margin-top: 40px;
+			}
 			.email-input::-webkit-input-placeholder {
 				color: #4A4A4A;
 				font-size: 16px;
 				font-family: 'AvenirNext-Regular';
 				opacity: .5;
 				text-indent: 20px;
+				@include phone {
+					font-size: 14px;
+				}
 			}
 			.email-input {
 				background-color: white;
@@ -60,6 +85,10 @@ $desktop-med-width: 910px;
 					width: 210px;
 					height: 35px;
 					font-size: 14px;
+				}
+				@include phone {
+					width: 180px;
+					font-size: 12px;
 				}
 			}
 			.white-button {
@@ -79,6 +108,11 @@ $desktop-med-width: 910px;
 					width: 120px;
 					font-size: 14px;
 				}
+				@include phone {
+					height: 35px;
+					width: 100px;
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -90,6 +124,10 @@ $desktop-med-width: 910px;
 		@include desktop-med {
 			margin-top: 30px;
 			font-size: 36px;
+		}
+		@include phone {
+			margin-top: 100px;
+			font-size: 30px;
 		}
 	}
 

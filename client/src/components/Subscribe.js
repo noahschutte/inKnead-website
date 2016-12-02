@@ -56,7 +56,7 @@ export default class Subscribe extends Component {
       	<h2 className='text-uppercase text-center'>Subscribe to our newsletter</h2>
       	<div>
 		    	<img src={email}/>
-		    	<p>Learn more on how to use our product and sign up for our newsletter</p>
+		    	<p>Start making the world a better place!</p>
 		    	<div className='email-form-container'>
 						<form onSubmit={this.handleSubmit}>
 							<input type='text' name='email' placeholder='Your E-mail' className='email-input' onChange={this.handleChange}/>

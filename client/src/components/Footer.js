@@ -9,7 +9,7 @@ export default class Footer extends Component {
 	    		<p className='text-uppercase'>privacy policy</p>
 	    		<p className='text-uppercase'>faq</p>
 	    		<p className='text-uppercase'>contact us</p>
-    		</div>
+    		</div><br/>
     		<p>Designed in New York. Built in React. &copy;2016 in knead.</p>
   		</footer>
     )

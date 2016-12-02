@@ -1,6 +1,13 @@
 $desktop-med-width: 910px;
+$phone: 640px;
+
 @mixin desktop-med {
 	@media (max-width: #{$desktop-med-width}) {
+		@content;
+	}
+}
+@mixin phone {
+	@media only screen and (max-device-width: #{$phone}) {
 		@content;
 	}
 }
@@ -17,6 +24,12 @@ $desktop-med-width: 910px;
 		@include desktop-med {
 			height: 400px;
 		}
+		@include phone {
+			height: 950px;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
 		div {
 			display: inline-block;
 			position: relative;
@@ -26,6 +39,12 @@ $desktop-med-width: 910px;
 			// height: 425px;
 			margin-left: 42px;
 			top: 1%;
+			@include phone {
+				width: 550px;
+				order: 2;
+				margin-left: -85px;
+				margin-top: 100px;
+			}
 			img {
 				width: 100%;
 			}
@@ -40,6 +59,12 @@ $desktop-med-width: 910px;
 			@include desktop-med {
 				top: 4%;
 				width: 300px;
+			}
+			@include phone {
+				margin-left: 18px;
+				top: 0;
+				order: 1;
+				width: 269px;
 			}
 			h2 {
 				font-size: 42px;
@@ -57,10 +82,16 @@ $desktop-med-width: 910px;
 					margin-top: 20px;
 					font-size: 14px;
 				}
+				@include phone {
+					margin-top: 50px;
+				}
 				&:nth-child(n+3) {
 					margin-top: 40px;
 					@include desktop-med {
 						margin-top: 20px;
+					}
+					@include phone {
+						margin-top: 40px;
 					}
 				}
 			}
