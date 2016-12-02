@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.09c121e7.css",
   "main.css.map": "static/css/main.09c121e7.css.map",
-  "main.js": "static/js/main.20d84217.js",
-  "main.js.map": "static/js/main.20d84217.js.map",
+  "main.js": "static/js/main.b67fab50.js",
+  "main.js.map": "static/js/main.b67fab50.js.map",
   "static/media/UltraBeams.ttf": "static/media/UltraBeams.a7ddc7a4.ttf",
   "static/media/arrow_down@2x.png": "static/media/arrow_down@2x.a472c320.png",
   "static/media/arrow_down_hover@2x.png": "static/media/arrow_down_hover@2x.fa0718ee.png",
@@ -20,6 +20,7 @@
   "static/media/icon_github@2x.png": "static/media/icon_github@2x.52f09037.png",
   "static/media/icon_linkedin@2x.png": "static/media/icon_linkedin@2x.1496b38d.png",
   "static/media/icon_twitter@2x.png": "static/media/icon_twitter@2x.efc28bc2.png",
-  "static/media/iphone_6_request@2x.png": "static/media/iphone_6_request@2x.1b08c7dc.png",
+  "static/media/iphone_6_1@2x.png": "static/media/iphone_6_1@2x.8b84b7e7.png",
+  "static/media/iphone_6_request@2x.png": "static/media/iphone_6_request@2x.30eceae9.png",
   "static/media/iphone_big.png": "static/media/iphone_big.73d7508d.png"
 }
