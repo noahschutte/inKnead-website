@@ -13,25 +13,25 @@ $phone: 640px;
 }
 
 .creators-container{
-		height: 600px;
+		height: 970px;
 		background-color: #FAFAFA;
 		overflow: hidden;
 		@include desktop-med {
-			height: 350px;
+			height: 710px;
 		}
 		@include phone {
-			height: 1480px;
+			height: 2080px;
 			min-width: 320px;
 		}
 	.creators {
 		margin: 0 auto;
-		height: 600px;
+		height: 970px;
 		max-width: 1024px;
 		@include desktop-med {
-			height: 350px;
+			height: 710px;
 		}
 		@include phone {
-			height: 1480px;
+			height: 2080px;
 		}
 		h2 {
 			font-size: 44px;
@@ -46,31 +46,36 @@ $phone: 640px;
 		}
 		.staff-container {
 			text-align: center;
-			margin-top: 100px;
+			margin-top: 80px;
 			@include desktop-med {
-				margin-top: 30px;
+				margin-top: 80px;
 			}
 			@include phone {
-				margin-top: 50px;
+				margin-top: 85px;
 			}
 			.individual {
 					display: inline-block;
-					margin: auto 50px;
+					height: 300px;
+					width: 190px;
+					margin: 20px 55px;
+					vertical-align: top;
 					@include desktop-med {
-						margin: auto 25px;
+						margin: -10px 20px;
 					}
 					@include phone {
-						margin-top: 50px;
+						margin-top: 15px;
 						margin-left: 100px;
 						margin-right: 100px;
 					}
-				#circle {
+				.circle-base {
 					width: 120px;
 					height: 120px;
-					background-color: blue;
+					// background-color: blue;
+					margin: auto;
 					-moz-border-radius: 50%;
 					-webkit-border-radius: 50%;
 					border-radius: 50%;
+					background-size: contain;
 					@include desktop-med {
 						width: 90px;
 						height: 90px;
@@ -79,6 +84,24 @@ $phone: 640px;
 						width: 120px;
 						height: 120px;
 					}
+				}
+				.fj {
+					background-image: url(../../public/images/FJ.jpg);
+				}
+				.koty {
+					background-image: url(../../public/images/Koty.jpg);
+				}
+				.jameson {
+					background-image: url(../../public/images/Jameson.jpg);
+				}
+				.kristi {
+					background-image: url(../../public/images/Kristi.jpg);
+				}
+				.noah {
+					background-image: url(../../public/images/Noah.jpg);
+				}
+				.susan {
+					background-image: url(../../public/images/Susan.jpg);
 				}
 				img {
 					margin: 0 10px;

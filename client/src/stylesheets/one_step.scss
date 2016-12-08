@@ -24,6 +24,7 @@ $phone: 640px;
 		max-width: 1024px;
 		height: 620px;
 		margin: auto;
+		overflow: hidden;
 		@include desktop-med {
 			height: 400px;
 		}
@@ -42,6 +43,7 @@ $phone: 640px;
 			// height: 425px;
 			margin-left: 42px;
 			top: 1%;
+
 			@include phone {
 				width: 550px;
 				order: 2;
