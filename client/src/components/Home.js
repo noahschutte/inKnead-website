@@ -32,9 +32,9 @@ export default class Home extends Component {
 								<h1>Pizza on Earth!</h1>
 							</div>
 							<div className="headline-info-temp">
-								<h4>And goodwill to all men. 
-								In Knead helps you put food on a person’s plate.</h4>
-								<p>Download the Inknead app now!</p>
+								<h4>And goodwill to all men.
+								in knead helps you put food on a person’s plate.</h4>
+              <p>Download the in knead app now!</p>
 							</div>
 							<div className='email-form-container'>
 
