@@ -10,24 +10,24 @@ export default class Home extends Component {
       	<div className='creators'>
 	      	<h2 className='text-center'>Who built this</h2>
 		      	<div className='staff-container'>
+              <div className='individual'>
+                <div className='circle-base noah'></div>
+                <b><p>Noah</p></b>
+                <p>Founder</p>
+                <img src={linkedin}/>
+                <img src={github}/>
+              </div>
+              <div className='individual'>
+                <div className='circle-base jameson'></div>
+                <b><p>Jameson</p></b>
+                <p>Community</p>
+                <img src={linkedin}/>
+                <img src={github}/>
+              </div>
 		      		<div className='individual'>
 			      		<div className='circle-base fj'></div>
 			      		<b><p>FJ</p></b>
 			      		<p>Mobile Developer</p>
-			      		<img src={linkedin}/>
-			      		<img src={github}/>
-		      		</div>
-			      	<div className='individual'>
-			      		<div className='circle-base jameson'></div>
-			      		<b><p>Jameson</p></b>
-			      		<p>Community</p>
-			      		<img src={linkedin}/>
-			      		<img src={github}/>
-		      		</div>
-		      		<div className='individual'>
-			      		<div className='circle-base noah'></div>
-			      		<b><p>Noah</p></b>
-			      		<p>Mobile Developer/Project Manager</p>
 			      		<img src={linkedin}/>
 			      		<img src={github}/>
 		      		</div>
